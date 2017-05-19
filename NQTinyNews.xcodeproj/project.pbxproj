@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CAF9B7BD9AA0570E4B66F52 /* libPods-NQTinyNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB8B0DFB63A26D3B5893393 /* libPods-NQTinyNews.a */; };
+		D23210D41ECC663E006B1267 /* NSURLSessionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D23210D31ECC663E006B1267 /* NSURLSessionTool.m */; };
 		D262875A1ECC5B3500AA5B37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D26287591ECC5B3500AA5B37 /* main.m */; };
 		D262875D1ECC5B3500AA5B37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D262875C1ECC5B3500AA5B37 /* AppDelegate.m */; };
 		D26287601ECC5B3500AA5B37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D262875F1ECC5B3500AA5B37 /* ViewController.m */; };
@@ -16,6 +18,7 @@
 		D262876B1ECC5B3500AA5B37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26287691ECC5B3500AA5B37 /* LaunchScreen.storyboard */; };
 		D26287761ECC5B3500AA5B37 /* NQTinyNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D26287751ECC5B3500AA5B37 /* NQTinyNewsTests.m */; };
 		D26287811ECC5B3500AA5B37 /* NQTinyNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D26287801ECC5B3500AA5B37 /* NQTinyNewsUITests.m */; };
+		D2FE027E1ECE952E00CE83D7 /* TNNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE027D1ECE952E00CE83D7 /* TNNetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9CB8B0DFB63A26D3B5893393 /* libPods-NQTinyNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NQTinyNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B613A176BF06596443E838 /* Pods-NQTinyNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NQTinyNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NQTinyNews/Pods-NQTinyNews.debug.xcconfig"; sourceTree = "<group>"; };
+		BAF564144EC2355976090972 /* Pods-NQTinyNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NQTinyNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-NQTinyNews/Pods-NQTinyNews.release.xcconfig"; sourceTree = "<group>"; };
+		D23210D21ECC663E006B1267 /* NSURLSessionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionTool.h; sourceTree = "<group>"; };
+		D23210D31ECC663E006B1267 /* NSURLSessionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionTool.m; sourceTree = "<group>"; };
+		D23210D81ECC6710006B1267 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		D23210D91ECC672E006B1267 /* Marco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marco.h; sourceTree = "<group>"; };
 		D26287551ECC5B3500AA5B37 /* NQTinyNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NQTinyNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26287591ECC5B3500AA5B37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D262875B1ECC5B3500AA5B37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +63,8 @@
 		D262877C1ECC5B3500AA5B37 /* NQTinyNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NQTinyNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26287801ECC5B3500AA5B37 /* NQTinyNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NQTinyNewsUITests.m; sourceTree = "<group>"; };
 		D26287821ECC5B3500AA5B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2FE027C1ECE952E00CE83D7 /* TNNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNNetworkManager.h; sourceTree = "<group>"; };
+		D2FE027D1ECE952E00CE83D7 /* TNNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNNetworkManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CAF9B7BD9AA0570E4B66F52 /* libPods-NQTinyNews.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +93,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D23210CD1ECC5D3F006B1267 /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				D23210D61ECC66BC006B1267 /* Marco */,
+				D23210CE1ECC5D3F006B1267 /* Network */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		D23210CE1ECC5D3F006B1267 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D23210D21ECC663E006B1267 /* NSURLSessionTool.h */,
+				D23210D31ECC663E006B1267 /* NSURLSessionTool.m */,
+				D2FE027C1ECE952E00CE83D7 /* TNNetworkManager.h */,
+				D2FE027D1ECE952E00CE83D7 /* TNNetworkManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D23210D61ECC66BC006B1267 /* Marco */ = {
+			isa = PBXGroup;
+			children = (
+				D23210D81ECC6710006B1267 /* Constant.h */,
+				D23210D91ECC672E006B1267 /* Marco.h */,
+			);
+			path = Marco;
+			sourceTree = "<group>";
+		};
 		D262874C1ECC5B3500AA5B37 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +129,8 @@
 				D26287741ECC5B3500AA5B37 /* NQTinyNewsTests */,
 				D262877F1ECC5B3500AA5B37 /* NQTinyNewsUITests */,
 				D26287561ECC5B3500AA5B37 /* Products */,
+				EAAD42BD89EAFC3396AC51E1 /* Pods */,
+				F93E8B2B0B9D6EBE7EE6E6DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +147,7 @@
 		D26287571ECC5B3500AA5B37 /* NQTinyNews */ = {
 			isa = PBXGroup;
 			children = (
+				D23210CD1ECC5D3F006B1267 /* Expand */,
 				D262875B1ECC5B3500AA5B37 /* AppDelegate.h */,
 				D262875C1ECC5B3500AA5B37 /* AppDelegate.m */,
 				D262875E1ECC5B3500AA5B37 /* ViewController.h */,
@@ -143,6 +188,23 @@
 			path = NQTinyNewsUITests;
 			sourceTree = "<group>";
 		};
+		EAAD42BD89EAFC3396AC51E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3B613A176BF06596443E838 /* Pods-NQTinyNews.debug.xcconfig */,
+				BAF564144EC2355976090972 /* Pods-NQTinyNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F93E8B2B0B9D6EBE7EE6E6DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CB8B0DFB63A26D3B5893393 /* libPods-NQTinyNews.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D26287851ECC5B3500AA5B37 /* Build configuration list for PBXNativeTarget "NQTinyNews" */;
 			buildPhases = (
+				DF7DAD29B9C98BD066A569DC /* [CP] Check Pods Manifest.lock */,
 				D26287511ECC5B3500AA5B37 /* Sources */,
 				D26287521ECC5B3500AA5B37 /* Frameworks */,
 				D26287531ECC5B3500AA5B37 /* Resources */,
+				181362DF6BC0F7B4B97708BD /* [CP] Embed Pods Frameworks */,
+				4BCAB768E902F6B8824115BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,14 +339,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		181362DF6BC0F7B4B97708BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NQTinyNews/Pods-NQTinyNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BCAB768E902F6B8824115BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NQTinyNews/Pods-NQTinyNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF7DAD29B9C98BD066A569DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D26287511ECC5B3500AA5B37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D26287601ECC5B3500AA5B37 /* ViewController.m in Sources */,
+				D23210D41ECC663E006B1267 /* NSURLSessionTool.m in Sources */,
 				D262875D1ECC5B3500AA5B37 /* AppDelegate.m in Sources */,
 				D262875A1ECC5B3500AA5B37 /* main.m in Sources */,
+				D2FE027E1ECE952E00CE83D7 /* TNNetworkManager.m in Sources */,
 				D26287661ECC5B3500AA5B37 /* NQTinyNews.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +542,7 @@
 		};
 		D26287861ECC5B3500AA5B37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3B613A176BF06596443E838 /* Pods-NQTinyNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 32K8UBGZ48;
@@ -439,6 +555,7 @@
 		};
 		D26287871ECC5B3500AA5B37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAF564144EC2355976090972 /* Pods-NQTinyNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 32K8UBGZ48;
@@ -518,6 +635,7 @@
 				D26287871ECC5B3500AA5B37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D26287881ECC5B3500AA5B37 /* Build configuration list for PBXNativeTarget "NQTinyNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +644,7 @@
 				D262878A1ECC5B3500AA5B37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D262878B1ECC5B3500AA5B37 /* Build configuration list for PBXNativeTarget "NQTinyNewsUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +653,7 @@
 				D262878D1ECC5B3500AA5B37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
