@@ -9,7 +9,70 @@
 #ifndef Marco_h
 #define Marco_h
 
+//生成单例
+#define SingletonH + (instancetype)sharedInstance;
 
-#define TOP_NEWS_APPCODE @"752bcdf6fd7244ae81b8c82ae838c31e"
+#define SingletonM \
+static id _instance; \
++ (instancetype)allocWithZone:(struct _NSZone *)zone \
+{ \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+_instance = [super allocWithZone:zone]; \
+}); \
+return _instance; \
+} \
++ (instancetype)sharedInstance \
+{ \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+_instance = [[self alloc] init]; \
+}); \
+return _instance; \
+} \
+- (id)copyWithZone:(NSZone *)zone \
+{ \
+return _instance; \
+}
+
+//weak/strong
+#define WeakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define StrongSelf(strongSelf) __strong __typeof(&*weakSelf)strongSelf = weakSelf;//必须先声明了weakSelf
+
+
+//Log当前方法
+#define MethodLog \
+NSLog(@"%s",__func__);\
+
+//Log任意对对象
+
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define Print(obj) NSLog(@"%@",obj);
+#else
+#define NSLog(FORMAT, ...) nil
+#define Print(obj) nil
+#endif
+
+//颜色
+#define RGB(a,b,c) [UIColor colorWithRed:(a/255.0) green:(b/255.0) blue:(c/255.0) alpha:1.0]
+#define RGBA(a,b,c,d) [UIColor colorWithRed:(a/255.0) green:(b/255.0) blue:(c/255.0) alpha:d]
+
+//尺寸
+#define ScreenHeight                    MAX([[UIScreen mainScreen] bounds].size.width,[[UIScreen mainScreen] bounds].size.height)
+#define ScreenWidth                     MIN([[UIScreen mainScreen] bounds].size.width,[[UIScreen mainScreen] bounds].size.height)
+#define Screen35in                      (ScreenHeight==480) // 4、4s
+#define Screen40in                      (ScreenHeight==568) // 5、5C
+#define Screen47in                      (ScreenHeight==667) // 6、7
+#define Screen55in                      (ScreenHeight==736) // 6+、7+
+#define iPad                            (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define iPadPro                         ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) && (ScreenHeight==1366))
+
+#define ADAPTER_SIZE(n) (n * [UIScreen mainScreen].bounds.size.width / 320.0f)
+
+
+
 
 #endif /* Marco_h */
+
+

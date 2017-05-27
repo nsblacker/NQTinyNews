@@ -8,53 +8,191 @@
 
 #import "NSURLSessionTool.h"
 
+NSString *const TNApiAuthorization_News1 = @"752bcdf6fd7244ae81b8c82ae838c31e";
+
 @implementation NSURLSessionTool
 
--(void)SessionRequestWithHTTPMethod:(HTTPMethod)httpMethod
-                          hostUrl:(NSString*)host
-                          pathUrl:(NSString*)path
-                         param:(id)param
-                       success:(void (^)(id response))success
-                       failure:(void (^)(NSError *err))failure{
+SingletonM
 
-    NSString *appcode = @"752bcdf6fd7244ae81b8c82ae838c31e";
-    NSString *method = @"GET";
-    NSString *querys = @"?";
-    [param enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-       
-        [querys stringByAppendingString:obj];
-    }];
+#pragma -mark detail request
+-(void)requestNewsWithType:(NSString *)type
+                   success:(URLSessionSuccessBlk_t)success
+                   failure:(URLSessionFailureBlk_t)failure{
     
-    NSString *url = [NSString stringWithFormat:@"%@%@%@",  host,  path , querys];
-    NSString *bodys = @"";
+    NSString *host = @"http://toutiao-ali.juheapi.com";
     
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString: url]  cachePolicy:1  timeoutInterval:  5];
-    request.HTTPMethod  =  method;
-    [request addValue:  [NSString  stringWithFormat:@"APPCODE %@" ,  appcode]  forHTTPHeaderField:  @"Authorization"];
-    NSURLSession *requestSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-    NSURLSessionDataTask *task = [requestSession dataTaskWithRequest:request
-                                                   completionHandler:^(NSData * _Nullable body , NSURLResponse * _Nullable response, NSError * _Nullable error) {
-                                                       NSLog(@"Response object: %@" , response);
-                                                       NSString *bodyString = [[NSString alloc] initWithData:body encoding:NSUTF8StringEncoding];
-                                                       
-                                                       //打印应答中的body
-                                                       NSLog(@"Response body: %@" , bodyString);
-                                                   }];
+    NSString *path = @"/toutiao/index";
     
-    [task resume];
-
+    NSDictionary *param = @{@"type":type};
+    
+    [self sessionRequestWithHTTPMethod:HTTPMethod_GET
+                               hostUrl:host
+                               pathUrl:path
+                                 param:param
+                               success:success
+                               failure:failure];
 }
 
-+(void)a{
+#pragma -mark network main interface
+/**
+ * 本App网路请求的入口，配置Config去设置Authorization，if needed.
+ */
+-(void)sessionRequestWithHTTPMethod:(HTTPMethod)httpMethod
+                          hostUrl:(NSString*)host
+                          pathUrl:(NSString*)path
+                         param:(id)params
+                       success:(URLSessionSuccessBlk_t)success
+                       failure:(URLSessionFailureBlk_t)failure{
     
-    NSString *appcode = @"752bcdf6fd7244ae81b8c82ae838c31e";
-    NSString *host = @"http://toutiao-ali.juheapi.com";
-    NSString *path = @"/toutiao/index";
-    NSString *method = @"GET";
-    NSString *querys = @"?type=type";
-    NSString *url = [NSString stringWithFormat:@"%@%@%@",  host,  path , querys];
-    NSString *bodys = @"";
+    //注意配置Header中参数的方法
+    NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration ephemeralSessionConfiguration];
     
+    [sessionConfig setHTTPAdditionalHeaders:@{@"Authorization":[NSString  stringWithFormat:@"APPCODE %@" ,  TNApiAuthorization_News1]}];
+    
+    switch (httpMethod) {
+        case HTTPMethod_GET:
+        {
+            [self GETDataWithHostUrl:host pathUrl:path param:params config:sessionConfig success:success failure:failure];
+        }
+            break;
+        case HTTPMethod_POST:
+        {
+            [self POSTDataWithHostUrl:host pathUrl:path param:params config:sessionConfig success:success failure:failure];
+        }
+            break;
+    }
+    
+}
+
+#pragma -mark GET/POST
+/**
+ * 封装GET与POST两者的区别，思路上就一点不同：param的处理。
+ * GET把参数string接到URL，然后init request with url；
+ * POST把参数string转为NSData，放到request.HTTPBody
+ * 以下两个方法可以移植
+ */
+/**
+ * Get Request
+ */
+-(void)GETDataWithHostUrl:(NSString*)host
+                  pathUrl:(NSString*)path
+                    param:(id)params
+                   config:(NSURLSessionConfiguration*)config
+                  success:(URLSessionSuccessBlk_t)success
+                  failure:(URLSessionFailureBlk_t)failure{
+//    
+//    if ([NSJSONSerialization isValidJSONObject:params]){
+//        
+//        
+//    }
+    NSMutableString *paramStr = [[NSMutableString alloc]init];
+    
+    if([params isKindOfClass:[NSDictionary class]]){
+        
+        [params enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+            
+            [paramStr appendFormat:@"%@=%@&",key,obj];
+            
+        }];
+    }
+    //GET
+    NSString *queryGET = [paramStr substringToIndex:paramStr.length - 1];//不安全
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@?%@",host,path,queryGET]];
+
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:10.0f];
+    
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
+    
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        if (data && !error) {
+            
+            id jsonDic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+            
+            if(!jsonDic){
+                
+                jsonDic = data;
+            }
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                if (success) {
+                    
+                    success(response,jsonDic);
+                }
+            });
+            
+            
+        }else{
+            
+            failure(error);
+        }
+    }];
+    [dataTask resume];
+}
+/**
+ * Post Request
+ */
+-(void)POSTDataWithHostUrl:(NSString*)host
+                   pathUrl:(NSString*)path
+                     param:(id)params
+                    config:(NSURLSessionConfiguration *)config
+                   success:(URLSessionSuccessBlk_t)success
+                   failure:(URLSessionFailureBlk_t)failure{
+
+    NSMutableString *paramStr = [[NSMutableString alloc]init];
+    
+    if([params isKindOfClass:[NSDictionary class]]){
+        
+        [params enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+            
+            NSString *paramKey = key;
+            
+            NSString *paramObj = obj;
+            
+            [paramStr appendFormat:@"%@=%@&",paramKey,paramObj];
+            
+        }];
+    }
+    //POST
+    NSString *queryPOST = [paramStr substringToIndex:paramStr.length - 1];
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",host,path]];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:10.0f];
+    
+    //与get不一样的地方
+    NSData *queryPOSTData = [queryPOST dataUsingEncoding:NSUTF8StringEncoding];
+    [request setHTTPMethod:@"POST"];
+    request.HTTPBody = queryPOSTData;
+    
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
+    
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        if (data && !error) {
+            
+            id jsonDic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+            
+            if(!jsonDic){
+                
+                jsonDic = data;
+            }
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                if (success) {
+                    
+                    success(response,jsonDic);
+                }
+            });
+            
+            
+        }else{
+            
+            failure(error);
+        }
+    }];
+    [dataTask resume];
 }
 
 @end

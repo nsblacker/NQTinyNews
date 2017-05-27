@@ -8,10 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		5CAF9B7BD9AA0570E4B66F52 /* libPods-NQTinyNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB8B0DFB63A26D3B5893393 /* libPods-NQTinyNews.a */; };
+		D20394D51ED7EAA400B3BFB0 /* TNRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394D41ED7EAA400B3BFB0 /* TNRootVC.m */; };
+		D20394DD1ED7F69100B3BFB0 /* HomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394DC1ED7F69100B3BFB0 /* HomePageVC.m */; };
+		D20394F11ED7FE2900B3BFB0 /* UIView+ZJFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394E11ED7FE2900B3BFB0 /* UIView+ZJFrame.m */; };
+		D20394F21ED7FE2900B3BFB0 /* UIViewController+ZJScrollPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394E31ED7FE2900B3BFB0 /* UIViewController+ZJScrollPageController.m */; };
+		D20394F31ED7FE2900B3BFB0 /* ZJCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394E51ED7FE2900B3BFB0 /* ZJCollectionView.m */; };
+		D20394F41ED7FE2900B3BFB0 /* ZJContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394E71ED7FE2900B3BFB0 /* ZJContentView.m */; };
+		D20394F51ED7FE2900B3BFB0 /* ZJScrollPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394E91ED7FE2900B3BFB0 /* ZJScrollPageView.m */; };
+		D20394F61ED7FE2900B3BFB0 /* ZJScrollSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394EC1ED7FE2900B3BFB0 /* ZJScrollSegmentView.m */; };
+		D20394F71ED7FE2900B3BFB0 /* ZJSegmentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394EE1ED7FE2900B3BFB0 /* ZJSegmentStyle.m */; };
+		D20394F81ED7FE2900B3BFB0 /* ZJTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394F01ED7FE2900B3BFB0 /* ZJTitleView.m */; };
+		D20395001ED93BE900B3BFB0 /* TNTableFlowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394FF1ED93BE900B3BFB0 /* TNTableFlowVC.m */; };
+		D20395051ED95E3400B3BFB0 /* TNHomeNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D20395041ED95E3400B3BFB0 /* TNHomeNewsModel.m */; };
 		D23210D41ECC663E006B1267 /* NSURLSessionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D23210D31ECC663E006B1267 /* NSURLSessionTool.m */; };
 		D262875A1ECC5B3500AA5B37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D26287591ECC5B3500AA5B37 /* main.m */; };
 		D262875D1ECC5B3500AA5B37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D262875C1ECC5B3500AA5B37 /* AppDelegate.m */; };
-		D26287601ECC5B3500AA5B37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D262875F1ECC5B3500AA5B37 /* ViewController.m */; };
 		D26287631ECC5B3500AA5B37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26287611ECC5B3500AA5B37 /* Main.storyboard */; };
 		D26287661ECC5B3500AA5B37 /* NQTinyNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D26287641ECC5B3500AA5B37 /* NQTinyNews.xcdatamodeld */; };
 		D26287681ECC5B3500AA5B37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D26287671ECC5B3500AA5B37 /* Assets.xcassets */; };
@@ -42,6 +53,33 @@
 		9CB8B0DFB63A26D3B5893393 /* libPods-NQTinyNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NQTinyNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B613A176BF06596443E838 /* Pods-NQTinyNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NQTinyNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NQTinyNews/Pods-NQTinyNews.debug.xcconfig"; sourceTree = "<group>"; };
 		BAF564144EC2355976090972 /* Pods-NQTinyNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NQTinyNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-NQTinyNews/Pods-NQTinyNews.release.xcconfig"; sourceTree = "<group>"; };
+		D20394D31ED7EAA400B3BFB0 /* TNRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNRootVC.h; sourceTree = "<group>"; };
+		D20394D41ED7EAA400B3BFB0 /* TNRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNRootVC.m; sourceTree = "<group>"; };
+		D20394D71ED7EB0100B3BFB0 /* Readme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Readme.h; sourceTree = "<group>"; };
+		D20394DB1ED7F69100B3BFB0 /* HomePageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageVC.h; sourceTree = "<group>"; };
+		D20394DC1ED7F69100B3BFB0 /* HomePageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageVC.m; sourceTree = "<group>"; };
+		D20394E01ED7FE2900B3BFB0 /* UIView+ZJFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZJFrame.h"; sourceTree = "<group>"; };
+		D20394E11ED7FE2900B3BFB0 /* UIView+ZJFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJFrame.m"; sourceTree = "<group>"; };
+		D20394E21ED7FE2900B3BFB0 /* UIViewController+ZJScrollPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZJScrollPageController.h"; sourceTree = "<group>"; };
+		D20394E31ED7FE2900B3BFB0 /* UIViewController+ZJScrollPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZJScrollPageController.m"; sourceTree = "<group>"; };
+		D20394E41ED7FE2900B3BFB0 /* ZJCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCollectionView.h; sourceTree = "<group>"; };
+		D20394E51ED7FE2900B3BFB0 /* ZJCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCollectionView.m; sourceTree = "<group>"; };
+		D20394E61ED7FE2900B3BFB0 /* ZJContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentView.h; sourceTree = "<group>"; };
+		D20394E71ED7FE2900B3BFB0 /* ZJContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentView.m; sourceTree = "<group>"; };
+		D20394E81ED7FE2900B3BFB0 /* ZJScrollPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollPageView.h; sourceTree = "<group>"; };
+		D20394E91ED7FE2900B3BFB0 /* ZJScrollPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollPageView.m; sourceTree = "<group>"; };
+		D20394EA1ED7FE2900B3BFB0 /* ZJScrollPageViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollPageViewDelegate.h; sourceTree = "<group>"; };
+		D20394EB1ED7FE2900B3BFB0 /* ZJScrollSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollSegmentView.h; sourceTree = "<group>"; };
+		D20394EC1ED7FE2900B3BFB0 /* ZJScrollSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollSegmentView.m; sourceTree = "<group>"; };
+		D20394ED1ED7FE2900B3BFB0 /* ZJSegmentStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSegmentStyle.h; sourceTree = "<group>"; };
+		D20394EE1ED7FE2900B3BFB0 /* ZJSegmentStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSegmentStyle.m; sourceTree = "<group>"; };
+		D20394EF1ED7FE2900B3BFB0 /* ZJTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTitleView.h; sourceTree = "<group>"; };
+		D20394F01ED7FE2900B3BFB0 /* ZJTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTitleView.m; sourceTree = "<group>"; };
+		D20394FD1ED90CD100B3BFB0 /* NQTinyNews-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NQTinyNews-PrefixHeader.pch"; sourceTree = "<group>"; };
+		D20394FE1ED93BE900B3BFB0 /* TNTableFlowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTableFlowVC.h; sourceTree = "<group>"; };
+		D20394FF1ED93BE900B3BFB0 /* TNTableFlowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTableFlowVC.m; sourceTree = "<group>"; };
+		D20395031ED95E3400B3BFB0 /* TNHomeNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNHomeNewsModel.h; sourceTree = "<group>"; };
+		D20395041ED95E3400B3BFB0 /* TNHomeNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNHomeNewsModel.m; sourceTree = "<group>"; };
 		D23210D21ECC663E006B1267 /* NSURLSessionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionTool.h; sourceTree = "<group>"; };
 		D23210D31ECC663E006B1267 /* NSURLSessionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionTool.m; sourceTree = "<group>"; };
 		D23210D81ECC6710006B1267 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
@@ -50,8 +88,6 @@
 		D26287591ECC5B3500AA5B37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D262875B1ECC5B3500AA5B37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D262875C1ECC5B3500AA5B37 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D262875E1ECC5B3500AA5B37 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D262875F1ECC5B3500AA5B37 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D26287621ECC5B3500AA5B37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D26287651ECC5B3500AA5B37 /* NQTinyNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NQTinyNews.xcdatamodel; sourceTree = "<group>"; };
 		D26287671ECC5B3500AA5B37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,9 +129,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D20394D11ED7D77400B3BFB0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D20394D21ED7D78B00B3BFB0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D20394D31ED7EAA400B3BFB0 /* TNRootVC.h */,
+				D20394D41ED7EAA400B3BFB0 /* TNRootVC.m */,
+				D20394D81ED7ED3200B3BFB0 /* HomePage */,
+				D20394D91ED7ED3B00B3BFB0 /* Mine */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D20394D61ED7EAF400B3BFB0 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				D20394D71ED7EB0100B3BFB0 /* Readme.h */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		D20394D81ED7ED3200B3BFB0 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				D20394DB1ED7F69100B3BFB0 /* HomePageVC.h */,
+				D20394DC1ED7F69100B3BFB0 /* HomePageVC.m */,
+				D20394FE1ED93BE900B3BFB0 /* TNTableFlowVC.h */,
+				D20394FF1ED93BE900B3BFB0 /* TNTableFlowVC.m */,
+				D20395031ED95E3400B3BFB0 /* TNHomeNewsModel.h */,
+				D20395041ED95E3400B3BFB0 /* TNHomeNewsModel.m */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		D20394D91ED7ED3B00B3BFB0 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		D20394DA1ED7F64200B3BFB0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D20394DE1ED7FE2900B3BFB0 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				D20394DF1ED7FE2900B3BFB0 /* ZJScrollPageView */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		D20394DF1ED7FE2900B3BFB0 /* ZJScrollPageView */ = {
+			isa = PBXGroup;
+			children = (
+				D20394E01ED7FE2900B3BFB0 /* UIView+ZJFrame.h */,
+				D20394E11ED7FE2900B3BFB0 /* UIView+ZJFrame.m */,
+				D20394E21ED7FE2900B3BFB0 /* UIViewController+ZJScrollPageController.h */,
+				D20394E31ED7FE2900B3BFB0 /* UIViewController+ZJScrollPageController.m */,
+				D20394E41ED7FE2900B3BFB0 /* ZJCollectionView.h */,
+				D20394E51ED7FE2900B3BFB0 /* ZJCollectionView.m */,
+				D20394E61ED7FE2900B3BFB0 /* ZJContentView.h */,
+				D20394E71ED7FE2900B3BFB0 /* ZJContentView.m */,
+				D20394E81ED7FE2900B3BFB0 /* ZJScrollPageView.h */,
+				D20394E91ED7FE2900B3BFB0 /* ZJScrollPageView.m */,
+				D20394EA1ED7FE2900B3BFB0 /* ZJScrollPageViewDelegate.h */,
+				D20394EB1ED7FE2900B3BFB0 /* ZJScrollSegmentView.h */,
+				D20394EC1ED7FE2900B3BFB0 /* ZJScrollSegmentView.m */,
+				D20394ED1ED7FE2900B3BFB0 /* ZJSegmentStyle.h */,
+				D20394EE1ED7FE2900B3BFB0 /* ZJSegmentStyle.m */,
+				D20394EF1ED7FE2900B3BFB0 /* ZJTitleView.h */,
+				D20394F01ED7FE2900B3BFB0 /* ZJTitleView.m */,
+			);
+			path = ZJScrollPageView;
+			sourceTree = "<group>";
+		};
 		D23210CD1ECC5D3F006B1267 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				D20394D61ED7EAF400B3BFB0 /* Others */,
 				D23210D61ECC66BC006B1267 /* Marco */,
 				D23210CE1ECC5D3F006B1267 /* Network */,
 			);
@@ -147,17 +269,20 @@
 		D26287571ECC5B3500AA5B37 /* NQTinyNews */ = {
 			isa = PBXGroup;
 			children = (
+				D20394D11ED7D77400B3BFB0 /* Resource */,
+				D20394DE1ED7FE2900B3BFB0 /* Vender */,
 				D23210CD1ECC5D3F006B1267 /* Expand */,
+				D20394DA1ED7F64200B3BFB0 /* Base */,
+				D20394D21ED7D78B00B3BFB0 /* Main */,
 				D262875B1ECC5B3500AA5B37 /* AppDelegate.h */,
 				D262875C1ECC5B3500AA5B37 /* AppDelegate.m */,
-				D262875E1ECC5B3500AA5B37 /* ViewController.h */,
-				D262875F1ECC5B3500AA5B37 /* ViewController.m */,
 				D26287611ECC5B3500AA5B37 /* Main.storyboard */,
 				D26287671ECC5B3500AA5B37 /* Assets.xcassets */,
 				D26287691ECC5B3500AA5B37 /* LaunchScreen.storyboard */,
 				D262876C1ECC5B3500AA5B37 /* Info.plist */,
 				D26287641ECC5B3500AA5B37 /* NQTinyNews.xcdatamodeld */,
 				D26287581ECC5B3500AA5B37 /* Supporting Files */,
+				D20394FD1ED90CD100B3BFB0 /* NQTinyNews-PrefixHeader.pch */,
 			);
 			path = NQTinyNews;
 			sourceTree = "<group>";
@@ -392,12 +517,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D26287601ECC5B3500AA5B37 /* ViewController.m in Sources */,
+				D20394F41ED7FE2900B3BFB0 /* ZJContentView.m in Sources */,
+				D20394D51ED7EAA400B3BFB0 /* TNRootVC.m in Sources */,
+				D20395051ED95E3400B3BFB0 /* TNHomeNewsModel.m in Sources */,
+				D20394F11ED7FE2900B3BFB0 /* UIView+ZJFrame.m in Sources */,
+				D20394F51ED7FE2900B3BFB0 /* ZJScrollPageView.m in Sources */,
 				D23210D41ECC663E006B1267 /* NSURLSessionTool.m in Sources */,
 				D262875D1ECC5B3500AA5B37 /* AppDelegate.m in Sources */,
+				D20395001ED93BE900B3BFB0 /* TNTableFlowVC.m in Sources */,
+				D20394F31ED7FE2900B3BFB0 /* ZJCollectionView.m in Sources */,
 				D262875A1ECC5B3500AA5B37 /* main.m in Sources */,
+				D20394F81ED7FE2900B3BFB0 /* ZJTitleView.m in Sources */,
+				D20394F61ED7FE2900B3BFB0 /* ZJScrollSegmentView.m in Sources */,
+				D20394F21ED7FE2900B3BFB0 /* UIViewController+ZJScrollPageController.m in Sources */,
 				D2FE027E1ECE952E00CE83D7 /* TNNetworkManager.m in Sources */,
+				D20394DD1ED7F69100B3BFB0 /* HomePageVC.m in Sources */,
 				D26287661ECC5B3500AA5B37 /* NQTinyNews.xcdatamodeld in Sources */,
+				D20394F71ED7FE2900B3BFB0 /* ZJSegmentStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +682,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 32K8UBGZ48;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NQTinyNews/NQTinyNews-PrefixHeader.pch";
 				INFOPLIST_FILE = NQTinyNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tcl.nq.NQTinyNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -559,7 +698,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 32K8UBGZ48;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NQTinyNews/NQTinyNews-PrefixHeader.pch";
 				INFOPLIST_FILE = NQTinyNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tcl.nq.NQTinyNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";

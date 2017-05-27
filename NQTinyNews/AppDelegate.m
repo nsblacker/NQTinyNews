@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TNRootVC.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    //[self createDefaultDocumentIfNeed];
+    
+    TNRootVC *rootVC = [[TNRootVC alloc]init];
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window setRootViewController:rootVC];
+    [self.window addSubview:rootVC.view];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -95,4 +106,16 @@
     }
 }
 
+#pragma mark - Private Methods
+//- (void) createDefaultDocumentIfNeed
+//{
+//    NSFileManager *fileManager = [NSFileManager defaultManager];
+//    NSError *error = nil;
+//    if (![fileManager isExecutableFileAtPath:PATH_CHATREC_IMAGE]) {
+//        [fileManager createDirectoryAtPath:PATH_CHATREC_IMAGE withIntermediateDirectories:YES attributes:nil error:&error];
+//        if (error) {
+//            TLLogError([self class], @"createDefaultDocumentIfNeed", error);
+//        }
+//    }
+//}
 @end

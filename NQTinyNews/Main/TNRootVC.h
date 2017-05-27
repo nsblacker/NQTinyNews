@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  TNRootVC.h
 //  NQTinyNews
 //
-//  Created by 那强 on 2017/5/17.
+//  Created by 那强 on 2017/5/26.
 //  Copyright © 2017年 那强. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TNRootVC : UITabBarController
 
 @end
-

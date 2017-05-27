@@ -9,9 +9,9 @@
 #ifndef Constant_h
 #define Constant_h
 
-typedef NS_ENUM(NSUInteger , HTTPMethod) {
-    HTTPMethod_GET,
-    HTTPMethod_POST,
-};
+
+
+
 
 #endif /* Constant_h */
+
