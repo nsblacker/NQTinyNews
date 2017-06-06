@@ -31,17 +31,8 @@
     [self setupUI];
     
     [self loadData];
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        
-//        [[TNNetworkManager sharedInstance] requestNewsWithType:_newsType success:^(id response) {
-//            
-//            NSLog(@"response:%@",response);
-//        } failure:^(NSError *error) {
-//            NSLog(@"%@",error);
-//        }];
-//
-//    });
-   }
+    
+}
 
 - (void)viewWillAppear:(BOOL)animated{
     
@@ -63,7 +54,7 @@
 #pragma -mark UI
 - (void)setupUI{
 
-    [self.view addSubview:_hp_newsTB];
+    [self.view addSubview:self.hp_newsTB];
 }
 
 - (UITableView *)hp_newsTB{
@@ -81,17 +72,16 @@
 }
 
 #pragma -mark Data Loading
-- (void)loadData{
+- (void)loadData {
     
     WeakSelf(weakSelf);
     [[TNNetworkManager sharedInstance]requestNewsWithType:_newsType success:^(id response) {
         
-        Print(response);
         id result = [response valueForKey:@"result"];
-        if(result && [result isMemberOfClass:[NSDictionary class]]){
+        if(result && [result isKindOfClass:[NSDictionary class]]){
             
             id data = [result valueForKey:@"data"];
-            if(data && [data isMemberOfClass:[NSArray class]]){
+            if(data && [data isKindOfClass:[NSArray class]]){
                 
                 NSError *err = nil;
                 for(NSDictionary *dic in data){
@@ -99,19 +89,18 @@
                     TNHomeNewsModel *tn_homeNewsModel = [[TNHomeNewsModel alloc]initWithDictionary:dic error:&err];
                     if(err){
                         
-                        Print(err);
+                        return;
                     }else{
-                        Print(tn_homeNewsModel);
+                        
+                        [weakSelf.hp_newsArr addObject:tn_homeNewsModel];
                     }
                 }
             }
-            
-        
+            [weakSelf.hp_newsTB reloadData];
         }
         
-        
-        
     } failure:^(NSError *error) {
+        
         NSLog(@"%@",error);
     }];
 
@@ -152,12 +141,22 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
+    
+    TNHomeNewsModel *model = _hp_newsArr[indexPath.row];
+    cell.textLabel.text = model.title;
     // Configure the cell...
     
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 80;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    return 80;
+}
 
 /*
 // Override to support conditional editing of the table view.
