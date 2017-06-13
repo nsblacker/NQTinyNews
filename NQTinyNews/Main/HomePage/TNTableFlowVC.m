@@ -9,6 +9,10 @@
 #import "TNTableFlowVC.h"
 #import "TNNetworkManager.h"
 #import "TNHomeNewsModel.h"
+#import "TNImageTitleStyleTBCell.h"
+#import <MJRefresh/MJRefresh.h>
+
+NSString *const TNImageTitleStyleTBCellIndentifier = @"TNImageTitleStyleTBCellIndentifier";
 
 @interface TNTableFlowVC ()
 @property (strong, nonatomic) UITableView *hp_newsTB;
@@ -66,7 +70,10 @@
         _hp_newsTB.delegate = self;
         _hp_newsTB.backgroundColor = [UIColor redColor];
         _hp_newsTB.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-        [_hp_newsTB registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseIdentifier"];
+        //[_hp_newsTB registerClass:[TNImageTitleStyleTBCell class] forCellReuseIdentifier:TNImageTitleStyleTBCellIndentifier];
+        [_hp_newsTB registerNib:[UINib nibWithNibName:NSStringFromClass([TNImageTitleStyleTBCell class]) bundle:[NSBundle mainBundle]]forCellReuseIdentifier:TNImageTitleStyleTBCellIndentifier];
+        
+        _hp_newsTB.mj_header = [MJRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
     }
     return _hp_newsTB;
 }
@@ -84,6 +91,7 @@
             if(data && [data isKindOfClass:[NSArray class]]){
                 
                 NSError *err = nil;
+                [weakSelf.hp_newsArr removeAllObjects];
                 for(NSDictionary *dic in data){
                     
                     TNHomeNewsModel *tn_homeNewsModel = [[TNHomeNewsModel alloc]initWithDictionary:dic error:&err];
@@ -140,11 +148,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
+    TNImageTitleStyleTBCell *cell = [tableView dequeueReusableCellWithIdentifier:TNImageTitleStyleTBCellIndentifier forIndexPath:indexPath];
     
     TNHomeNewsModel *model = _hp_newsArr[indexPath.row];
-    cell.textLabel.text = model.title;
+    
     // Configure the cell...
+    [cell configCellWithModel:model];
     
     return cell;
 }

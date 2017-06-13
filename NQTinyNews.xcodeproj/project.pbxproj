@@ -21,6 +21,8 @@
 		D20395001ED93BE900B3BFB0 /* TNTableFlowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394FF1ED93BE900B3BFB0 /* TNTableFlowVC.m */; };
 		D20395051ED95E3400B3BFB0 /* TNHomeNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D20395041ED95E3400B3BFB0 /* TNHomeNewsModel.m */; };
 		D23210D41ECC663E006B1267 /* NSURLSessionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D23210D31ECC663E006B1267 /* NSURLSessionTool.m */; };
+		D23551351EE9885B00986180 /* TNImageTitleStyleTBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D23551331EE9885B00986180 /* TNImageTitleStyleTBCell.m */; };
+		D23551361EE9885B00986180 /* TNImageTitleStyleTBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23551341EE9885B00986180 /* TNImageTitleStyleTBCell.xib */; };
 		D262875A1ECC5B3500AA5B37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D26287591ECC5B3500AA5B37 /* main.m */; };
 		D262875D1ECC5B3500AA5B37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D262875C1ECC5B3500AA5B37 /* AppDelegate.m */; };
 		D26287631ECC5B3500AA5B37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26287611ECC5B3500AA5B37 /* Main.storyboard */; };
@@ -84,6 +86,9 @@
 		D23210D31ECC663E006B1267 /* NSURLSessionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionTool.m; sourceTree = "<group>"; };
 		D23210D81ECC6710006B1267 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		D23210D91ECC672E006B1267 /* Marco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marco.h; sourceTree = "<group>"; };
+		D23551321EE9885B00986180 /* TNImageTitleStyleTBCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNImageTitleStyleTBCell.h; sourceTree = "<group>"; };
+		D23551331EE9885B00986180 /* TNImageTitleStyleTBCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNImageTitleStyleTBCell.m; sourceTree = "<group>"; };
+		D23551341EE9885B00986180 /* TNImageTitleStyleTBCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNImageTitleStyleTBCell.xib; sourceTree = "<group>"; };
 		D26287551ECC5B3500AA5B37 /* NQTinyNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NQTinyNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26287591ECC5B3500AA5B37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D262875B1ECC5B3500AA5B37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -164,6 +169,9 @@
 				D20394FF1ED93BE900B3BFB0 /* TNTableFlowVC.m */,
 				D20395031ED95E3400B3BFB0 /* TNHomeNewsModel.h */,
 				D20395041ED95E3400B3BFB0 /* TNHomeNewsModel.m */,
+				D23551321EE9885B00986180 /* TNImageTitleStyleTBCell.h */,
+				D23551331EE9885B00986180 /* TNImageTitleStyleTBCell.m */,
+				D23551341EE9885B00986180 /* TNImageTitleStyleTBCell.xib */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -444,6 +452,7 @@
 			files = (
 				D262876B1ECC5B3500AA5B37 /* LaunchScreen.storyboard in Resources */,
 				D26287681ECC5B3500AA5B37 /* Assets.xcassets in Resources */,
+				D23551361EE9885B00986180 /* TNImageTitleStyleTBCell.xib in Resources */,
 				D26287631ECC5B3500AA5B37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +530,7 @@
 				D20394D51ED7EAA400B3BFB0 /* TNRootVC.m in Sources */,
 				D20395051ED95E3400B3BFB0 /* TNHomeNewsModel.m in Sources */,
 				D20394F11ED7FE2900B3BFB0 /* UIView+ZJFrame.m in Sources */,
+				D23551351EE9885B00986180 /* TNImageTitleStyleTBCell.m in Sources */,
 				D20394F51ED7FE2900B3BFB0 /* ZJScrollPageView.m in Sources */,
 				D23210D41ECC663E006B1267 /* NSURLSessionTool.m in Sources */,
 				D262875D1ECC5B3500AA5B37 /* AppDelegate.m in Sources */,
