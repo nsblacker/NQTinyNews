@@ -70,6 +70,13 @@ NSLog(@"%s",__func__);\
 
 #define ADAPTER_SIZE(n) (n * [UIScreen mainScreen].bounds.size.width / 320.0f)
 
+#define height_StatusBar 20.0
+#define height_NavigationBar 64.0
+#define height_Segment 30.0
+#define height_TabBar 48.0
+#define height_ViewWithNav (ScreenHeight  - height_NavigationBar)
+#define height_ViewWithNav_Tab (ScreenHeight  - height_NavigationBar - height_TabBar)
+#define height_ViewWithNav_Tab_Seg (ScreenHeight  - height_NavigationBar - height_TabBar - height_Segment)
 
 
 

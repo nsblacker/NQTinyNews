@@ -38,20 +38,16 @@
 }
 
 - (ZJScrollPageView*)segmentV{
-    
     if(!_segmentV){
-        
         ZJSegmentStyle *style = [[ZJSegmentStyle alloc] init];
         style.showCover = YES;
         style.segmentViewBounces = NO;
         style.gradualChangeTitleColor = YES;
         style.showExtraButton = NO;
         style.extraBtnBackgroundImageName = @"extraBtnBackgroundImage";
-        style.segmentHeight = 30;
+        style.segmentHeight = height_Segment;
         style.autoAdjustTitlesWidth = YES;
-        
-        CGRect segmentViewFrame = CGRectMake(0, 64.0, self.view.bounds.size.width, self.view.bounds.size.height - 64.0);
-        //初始化
+        CGRect segmentViewFrame = CGRectMake(0, height_NavigationBar, ScreenWidth, height_ViewWithNav_Tab);
         _segmentV = [[ZJScrollPageView alloc]initWithFrame:segmentViewFrame segmentStyle:style titles:_titles parentViewController:self delegate:self];
     }
     return _segmentV;

@@ -23,6 +23,7 @@
 		D23210D41ECC663E006B1267 /* NSURLSessionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D23210D31ECC663E006B1267 /* NSURLSessionTool.m */; };
 		D23551351EE9885B00986180 /* TNImageTitleStyleTBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D23551331EE9885B00986180 /* TNImageTitleStyleTBCell.m */; };
 		D23551361EE9885B00986180 /* TNImageTitleStyleTBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23551341EE9885B00986180 /* TNImageTitleStyleTBCell.xib */; };
+		D23BA72E1EF7CA0000D44C1B /* TNBaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D23BA72D1EF7CA0000D44C1B /* TNBaseNavigationVC.m */; };
 		D262875A1ECC5B3500AA5B37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D26287591ECC5B3500AA5B37 /* main.m */; };
 		D262875D1ECC5B3500AA5B37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D262875C1ECC5B3500AA5B37 /* AppDelegate.m */; };
 		D26287631ECC5B3500AA5B37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26287611ECC5B3500AA5B37 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		D262876B1ECC5B3500AA5B37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26287691ECC5B3500AA5B37 /* LaunchScreen.storyboard */; };
 		D26287761ECC5B3500AA5B37 /* NQTinyNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D26287751ECC5B3500AA5B37 /* NQTinyNewsTests.m */; };
 		D26287811ECC5B3500AA5B37 /* NQTinyNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D26287801ECC5B3500AA5B37 /* NQTinyNewsUITests.m */; };
+		D29EFE2A1EF7D066007D9FB5 /* TNBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EFE291EF7D066007D9FB5 /* TNBaseVC.m */; };
 		D2FE027E1ECE952E00CE83D7 /* TNNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE027D1ECE952E00CE83D7 /* TNNetworkManager.m */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,8 @@
 		D23551321EE9885B00986180 /* TNImageTitleStyleTBCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNImageTitleStyleTBCell.h; sourceTree = "<group>"; };
 		D23551331EE9885B00986180 /* TNImageTitleStyleTBCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNImageTitleStyleTBCell.m; sourceTree = "<group>"; };
 		D23551341EE9885B00986180 /* TNImageTitleStyleTBCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNImageTitleStyleTBCell.xib; sourceTree = "<group>"; };
+		D23BA72C1EF7CA0000D44C1B /* TNBaseNavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNBaseNavigationVC.h; sourceTree = "<group>"; };
+		D23BA72D1EF7CA0000D44C1B /* TNBaseNavigationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNBaseNavigationVC.m; sourceTree = "<group>"; };
 		D26287551ECC5B3500AA5B37 /* NQTinyNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NQTinyNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26287591ECC5B3500AA5B37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D262875B1ECC5B3500AA5B37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 		D262877C1ECC5B3500AA5B37 /* NQTinyNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NQTinyNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26287801ECC5B3500AA5B37 /* NQTinyNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NQTinyNewsUITests.m; sourceTree = "<group>"; };
 		D26287821ECC5B3500AA5B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D29EFE281EF7D066007D9FB5 /* TNBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNBaseVC.h; sourceTree = "<group>"; };
+		D29EFE291EF7D066007D9FB5 /* TNBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNBaseVC.m; sourceTree = "<group>"; };
 		D2FE027C1ECE952E00CE83D7 /* TNNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNNetworkManager.h; sourceTree = "<group>"; };
 		D2FE027D1ECE952E00CE83D7 /* TNNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNNetworkManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,20 +140,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D20394D11ED7D77400B3BFB0 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
 		D20394D21ED7D78B00B3BFB0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				D20394D31ED7EAA400B3BFB0 /* TNRootVC.h */,
 				D20394D41ED7EAA400B3BFB0 /* TNRootVC.m */,
+				D23BA72B1EF7C93500D44C1B /* BaseClasses */,
 				D20394D81ED7ED3200B3BFB0 /* HomePage */,
-				D20394D91ED7ED3B00B3BFB0 /* Mine */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -174,20 +173,6 @@
 				D23551341EE9885B00986180 /* TNImageTitleStyleTBCell.xib */,
 			);
 			path = HomePage;
-			sourceTree = "<group>";
-		};
-		D20394D91ED7ED3B00B3BFB0 /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		D20394DA1ED7F64200B3BFB0 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		D20394DE1ED7FE2900B3BFB0 /* Vender */ = {
@@ -252,6 +237,17 @@
 			path = Marco;
 			sourceTree = "<group>";
 		};
+		D23BA72B1EF7C93500D44C1B /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D23BA72C1EF7CA0000D44C1B /* TNBaseNavigationVC.h */,
+				D23BA72D1EF7CA0000D44C1B /* TNBaseNavigationVC.m */,
+				D29EFE281EF7D066007D9FB5 /* TNBaseVC.h */,
+				D29EFE291EF7D066007D9FB5 /* TNBaseVC.m */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
 		D262874C1ECC5B3500AA5B37 = {
 			isa = PBXGroup;
 			children = (
@@ -277,10 +273,8 @@
 		D26287571ECC5B3500AA5B37 /* NQTinyNews */ = {
 			isa = PBXGroup;
 			children = (
-				D20394D11ED7D77400B3BFB0 /* Resource */,
 				D20394DE1ED7FE2900B3BFB0 /* Vender */,
 				D23210CD1ECC5D3F006B1267 /* Expand */,
-				D20394DA1ED7F64200B3BFB0 /* Base */,
 				D20394D21ED7D78B00B3BFB0 /* Main */,
 				D262875B1ECC5B3500AA5B37 /* AppDelegate.h */,
 				D262875C1ECC5B3500AA5B37 /* AppDelegate.m */,
@@ -527,6 +521,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D20394F41ED7FE2900B3BFB0 /* ZJContentView.m in Sources */,
+				D23BA72E1EF7CA0000D44C1B /* TNBaseNavigationVC.m in Sources */,
 				D20394D51ED7EAA400B3BFB0 /* TNRootVC.m in Sources */,
 				D20395051ED95E3400B3BFB0 /* TNHomeNewsModel.m in Sources */,
 				D20394F11ED7FE2900B3BFB0 /* UIView+ZJFrame.m in Sources */,
@@ -536,6 +531,7 @@
 				D262875D1ECC5B3500AA5B37 /* AppDelegate.m in Sources */,
 				D20395001ED93BE900B3BFB0 /* TNTableFlowVC.m in Sources */,
 				D20394F31ED7FE2900B3BFB0 /* ZJCollectionView.m in Sources */,
+				D29EFE2A1EF7D066007D9FB5 /* TNBaseVC.m in Sources */,
 				D262875A1ECC5B3500AA5B37 /* main.m in Sources */,
 				D20394F81ED7FE2900B3BFB0 /* ZJTitleView.m in Sources */,
 				D20394F61ED7FE2900B3BFB0 /* ZJScrollSegmentView.m in Sources */,
@@ -699,6 +695,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tcl.nq.NQTinyNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -715,6 +712,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tcl.nq.NQTinyNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "TNRootVC.h"
+#import "TNBaseNavigationVC.h"
 #import "HomePageVC.h"
 
 @interface TNRootVC ()
@@ -32,18 +33,18 @@
     HomePageVC *homePageVC = [[HomePageVC alloc]init];
     homePageVC.title = @"home";
     homePageVC.view.backgroundColor = [UIColor redColor];
-    UINavigationController *homePageNVC = [[UINavigationController alloc]initWithRootViewController:homePageVC];
+    TNBaseNavigationVC *homePageNVC = [[TNBaseNavigationVC alloc]initWithRootViewController:homePageVC];
     
     UIViewController *tmpVC1 = [[UIViewController alloc]init];
     tmpVC1.title = @"tmp1";
-    UINavigationController *tmpNVC1 = [[UINavigationController alloc]initWithRootViewController:tmpVC1];
+    TNBaseNavigationVC *tmpNVC1 = [[TNBaseNavigationVC alloc]initWithRootViewController:tmpVC1];
     
     UIViewController *tmpVC2 = [[UIViewController alloc]init];
     tmpVC2.title = @"tmp2";
-    UINavigationController *tmpNVC2 = [[UINavigationController alloc]initWithRootViewController:tmpVC2];
+    TNBaseNavigationVC *tmpNVC2 = [[TNBaseNavigationVC alloc]initWithRootViewController:tmpVC2];
     
     UIViewController *tmpVC3 = [[UIViewController alloc]init];
-    UINavigationController *tmpNVC3 = [[UINavigationController alloc]initWithRootViewController:tmpVC3];
+    TNBaseNavigationVC *tmpNVC3 = [[TNBaseNavigationVC alloc]initWithRootViewController:tmpVC3];
     tmpVC3.title = @"tmp3";
     
     [self setViewControllers:@[homePageNVC,tmpNVC1,tmpNVC2,tmpNVC3]];

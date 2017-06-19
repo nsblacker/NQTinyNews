@@ -63,14 +63,11 @@ NSString *const TNImageTitleStyleTBCellIndentifier = @"TNImageTitleStyleTBCellIn
 
 - (UITableView *)hp_newsTB{
     if(!_hp_newsTB){
-    
-        CGRect frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+        CGRect frame = CGRectMake(0, 0, ScreenWidth, height_ViewWithNav_Tab_Seg);
         _hp_newsTB = [[UITableView alloc]initWithFrame:frame style:UITableViewStylePlain];
         _hp_newsTB.dataSource = self;
         _hp_newsTB.delegate = self;
-        _hp_newsTB.backgroundColor = [UIColor redColor];
         _hp_newsTB.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-        //[_hp_newsTB registerClass:[TNImageTitleStyleTBCell class] forCellReuseIdentifier:TNImageTitleStyleTBCellIndentifier];
         [_hp_newsTB registerNib:[UINib nibWithNibName:NSStringFromClass([TNImageTitleStyleTBCell class]) bundle:[NSBundle mainBundle]]forCellReuseIdentifier:TNImageTitleStyleTBCellIndentifier];
         
         _hp_newsTB.mj_header = [MJRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
@@ -80,7 +77,6 @@ NSString *const TNImageTitleStyleTBCellIndentifier = @"TNImageTitleStyleTBCellIn
 
 #pragma -mark Data Loading
 - (void)loadData {
-    
     WeakSelf(weakSelf);
     [[TNNetworkManager sharedInstance]requestNewsWithType:_newsType success:^(id response) {
         
@@ -164,7 +160,7 @@ NSString *const TNImageTitleStyleTBCellIndentifier = @"TNImageTitleStyleTBCellIn
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    return 80;
+    return 150;
 }
 
 /*

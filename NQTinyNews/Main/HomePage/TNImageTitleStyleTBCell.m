@@ -24,19 +24,19 @@
     // Configure the view for the selected state
 }
 
-- (void)configCellWithModel:(TNHomeNewsModel*)model{
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    [self.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+}
 
+- (void)configCellWithModel:(TNHomeNewsModel*)model{
     _newsTitle.text = model.title;
-    
-    //_newsThumbnail.image = nil;
     [_newsThumbnail setImageWithURL:[NSURL URLWithString:model.thumbnail_pic_s] placeholder:nil options:YYWebImageOptionIgnoreFailedURL completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
         
         if(error){
             NSLog(@"%@",error);
         }
     }];
-    
     _newsSource.text  = @"from";
-    
 }
 @end
