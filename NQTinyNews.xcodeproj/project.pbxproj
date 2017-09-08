@@ -159,13 +159,11 @@
 		D20394D21ED7D78B00B3BFB0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				D20394D31ED7EAA400B3BFB0 /* TNRootVC.h */,
-				D20394D41ED7EAA400B3BFB0 /* TNRootVC.m */,
 				D23BA72B1EF7C93500D44C1B /* BaseClasses */,
 				D2D529F31F60FDEF00E13B02 /* ViewModel */,
 				D2D529F21F60FDD700E13B02 /* Model */,
 				D2D529F11F60FDA400E13B02 /* ViewController */,
-				D20394D81ED7ED3200B3BFB0 /* HomePage */,
+				D20394D81ED7ED3200B3BFB0 /* UI */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -178,13 +176,15 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
-		D20394D81ED7ED3200B3BFB0 /* HomePage */ = {
+		D20394D81ED7ED3200B3BFB0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D20394D31ED7EAA400B3BFB0 /* TNRootVC.h */,
+				D20394D41ED7EAA400B3BFB0 /* TNRootVC.m */,
 				D20394DB1ED7F69100B3BFB0 /* HomePageVC.h */,
 				D20394DC1ED7F69100B3BFB0 /* HomePageVC.m */,
 			);
-			path = HomePage;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		D20394DE1ED7FE2900B3BFB0 /* Vender */ = {
