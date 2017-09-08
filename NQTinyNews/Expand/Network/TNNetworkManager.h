@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Constant.h"
-#import "Marco.h"
 
 typedef NS_ENUM(NSUInteger,HttpRequestMethod){
     

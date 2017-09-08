@@ -34,6 +34,13 @@ SingletonM
         
         _afHttpSessionManager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:sessionConfig];
         
+        //_afHttpSessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
+        _afHttpSessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
+        _afHttpSessionManager.responseSerializer.acceptableContentTypes = [_afHttpSessionManager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
+        _afHttpSessionManager.requestSerializer = [AFJSONRequestSerializer serializer];
+        //设置5秒超时
+        _afHttpSessionManager.requestSerializer.timeoutInterval = 5;
+        
     }
     return _afHttpSessionManager;
 }

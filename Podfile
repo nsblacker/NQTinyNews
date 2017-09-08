@@ -7,5 +7,6 @@ pod 'JSONModel', '~> 1.7.0'
 pod 'YYKit'
 pod 'MJRefresh'
 pod 'Masonry'
+pod 'SVProgressHUD'
 end
 

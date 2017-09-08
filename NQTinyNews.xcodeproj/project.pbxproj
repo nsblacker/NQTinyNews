@@ -24,6 +24,7 @@
 		D23551351EE9885B00986180 /* TNImageTitleStyleTBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D23551331EE9885B00986180 /* TNImageTitleStyleTBCell.m */; };
 		D23551361EE9885B00986180 /* TNImageTitleStyleTBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23551341EE9885B00986180 /* TNImageTitleStyleTBCell.xib */; };
 		D23BA72E1EF7CA0000D44C1B /* TNBaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D23BA72D1EF7CA0000D44C1B /* TNBaseNavigationVC.m */; };
+		D25813961F42C13B00C7A01A /* TCWeakObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D25813951F42C13B00C7A01A /* TCWeakObject.m */; };
 		D262875A1ECC5B3500AA5B37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D26287591ECC5B3500AA5B37 /* main.m */; };
 		D262875D1ECC5B3500AA5B37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D262875C1ECC5B3500AA5B37 /* AppDelegate.m */; };
 		D26287631ECC5B3500AA5B37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26287611ECC5B3500AA5B37 /* Main.storyboard */; };
@@ -32,7 +33,11 @@
 		D262876B1ECC5B3500AA5B37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26287691ECC5B3500AA5B37 /* LaunchScreen.storyboard */; };
 		D26287761ECC5B3500AA5B37 /* NQTinyNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D26287751ECC5B3500AA5B37 /* NQTinyNewsTests.m */; };
 		D26287811ECC5B3500AA5B37 /* NQTinyNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D26287801ECC5B3500AA5B37 /* NQTinyNewsUITests.m */; };
+		D2838CEC1F62879E00FC6F06 /* TNWebviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2838CEB1F62879E00FC6F06 /* TNWebviewVC.m */; };
 		D29EFE2A1EF7D066007D9FB5 /* TNBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EFE291EF7D066007D9FB5 /* TNBaseVC.m */; };
+		D2CDF07E1F42862C0041E785 /* TCGeneralService.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CDF07D1F42862C0041E785 /* TCGeneralService.m */; };
+		D2D529F71F61608A00E13B02 /* TNViewModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D529F61F61608A00E13B02 /* TNViewModelClass.m */; };
+		D2D529FB1F61633300E13B02 /* TNFetchTableFlowDataVM.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D529FA1F61633300E13B02 /* TNFetchTableFlowDataVM.m */; };
 		D2FE027E1ECE952E00CE83D7 /* TNNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE027D1ECE952E00CE83D7 /* TNNetworkManager.m */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +98,8 @@
 		D23551341EE9885B00986180 /* TNImageTitleStyleTBCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNImageTitleStyleTBCell.xib; sourceTree = "<group>"; };
 		D23BA72C1EF7CA0000D44C1B /* TNBaseNavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNBaseNavigationVC.h; sourceTree = "<group>"; };
 		D23BA72D1EF7CA0000D44C1B /* TNBaseNavigationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNBaseNavigationVC.m; sourceTree = "<group>"; };
+		D25813941F42C13B00C7A01A /* TCWeakObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TCWeakObject.h; path = NQTinyNews/Expand/WeakObject/TCWeakObject.h; sourceTree = SOURCE_ROOT; };
+		D25813951F42C13B00C7A01A /* TCWeakObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TCWeakObject.m; path = NQTinyNews/Expand/WeakObject/TCWeakObject.m; sourceTree = SOURCE_ROOT; };
 		D26287551ECC5B3500AA5B37 /* NQTinyNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NQTinyNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26287591ECC5B3500AA5B37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D262875B1ECC5B3500AA5B37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,8 +115,17 @@
 		D262877C1ECC5B3500AA5B37 /* NQTinyNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NQTinyNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26287801ECC5B3500AA5B37 /* NQTinyNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NQTinyNewsUITests.m; sourceTree = "<group>"; };
 		D26287821ECC5B3500AA5B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2838CEA1F62879E00FC6F06 /* TNWebviewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNWebviewVC.h; sourceTree = "<group>"; };
+		D2838CEB1F62879E00FC6F06 /* TNWebviewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNWebviewVC.m; sourceTree = "<group>"; };
 		D29EFE281EF7D066007D9FB5 /* TNBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNBaseVC.h; sourceTree = "<group>"; };
 		D29EFE291EF7D066007D9FB5 /* TNBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNBaseVC.m; sourceTree = "<group>"; };
+		D2CDF07C1F42862C0041E785 /* TCGeneralService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCGeneralService.h; sourceTree = "<group>"; };
+		D2CDF07D1F42862C0041E785 /* TCGeneralService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCGeneralService.m; sourceTree = "<group>"; };
+		D2D529F51F61608A00E13B02 /* TNViewModelClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNViewModelClass.h; sourceTree = "<group>"; };
+		D2D529F61F61608A00E13B02 /* TNViewModelClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNViewModelClass.m; sourceTree = "<group>"; };
+		D2D529F91F61633300E13B02 /* TNFetchTableFlowDataVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNFetchTableFlowDataVM.h; sourceTree = "<group>"; };
+		D2D529FA1F61633300E13B02 /* TNFetchTableFlowDataVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNFetchTableFlowDataVM.m; sourceTree = "<group>"; };
+		D2D529FC1F6163B800E13B02 /* TNBaseClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNBaseClasses.h; sourceTree = "<group>"; };
 		D2FE027C1ECE952E00CE83D7 /* TNNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNNetworkManager.h; sourceTree = "<group>"; };
 		D2FE027D1ECE952E00CE83D7 /* TNNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNNetworkManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +162,9 @@
 				D20394D31ED7EAA400B3BFB0 /* TNRootVC.h */,
 				D20394D41ED7EAA400B3BFB0 /* TNRootVC.m */,
 				D23BA72B1EF7C93500D44C1B /* BaseClasses */,
+				D2D529F31F60FDEF00E13B02 /* ViewModel */,
+				D2D529F21F60FDD700E13B02 /* Model */,
+				D2D529F11F60FDA400E13B02 /* ViewController */,
 				D20394D81ED7ED3200B3BFB0 /* HomePage */,
 			);
 			path = Main;
@@ -164,13 +183,6 @@
 			children = (
 				D20394DB1ED7F69100B3BFB0 /* HomePageVC.h */,
 				D20394DC1ED7F69100B3BFB0 /* HomePageVC.m */,
-				D20394FE1ED93BE900B3BFB0 /* TNTableFlowVC.h */,
-				D20394FF1ED93BE900B3BFB0 /* TNTableFlowVC.m */,
-				D20395031ED95E3400B3BFB0 /* TNHomeNewsModel.h */,
-				D20395041ED95E3400B3BFB0 /* TNHomeNewsModel.m */,
-				D23551321EE9885B00986180 /* TNImageTitleStyleTBCell.h */,
-				D23551331EE9885B00986180 /* TNImageTitleStyleTBCell.m */,
-				D23551341EE9885B00986180 /* TNImageTitleStyleTBCell.xib */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -210,6 +222,7 @@
 		D23210CD1ECC5D3F006B1267 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				D2D529EE1F60F7F500E13B02 /* WeakObject */,
 				D20394D61ED7EAF400B3BFB0 /* Others */,
 				D23210D61ECC66BC006B1267 /* Marco */,
 				D23210CE1ECC5D3F006B1267 /* Network */,
@@ -233,6 +246,7 @@
 			children = (
 				D23210D81ECC6710006B1267 /* Constant.h */,
 				D23210D91ECC672E006B1267 /* Marco.h */,
+				D2D529FC1F6163B800E13B02 /* TNBaseClasses.h */,
 			);
 			path = Marco;
 			sourceTree = "<group>";
@@ -273,18 +287,13 @@
 		D26287571ECC5B3500AA5B37 /* NQTinyNews */ = {
 			isa = PBXGroup;
 			children = (
+				D2D529EF1F60F87200E13B02 /* Resource */,
 				D20394DE1ED7FE2900B3BFB0 /* Vender */,
 				D23210CD1ECC5D3F006B1267 /* Expand */,
 				D20394D21ED7D78B00B3BFB0 /* Main */,
 				D262875B1ECC5B3500AA5B37 /* AppDelegate.h */,
 				D262875C1ECC5B3500AA5B37 /* AppDelegate.m */,
-				D26287611ECC5B3500AA5B37 /* Main.storyboard */,
-				D26287671ECC5B3500AA5B37 /* Assets.xcassets */,
-				D26287691ECC5B3500AA5B37 /* LaunchScreen.storyboard */,
-				D262876C1ECC5B3500AA5B37 /* Info.plist */,
-				D26287641ECC5B3500AA5B37 /* NQTinyNews.xcdatamodeld */,
 				D26287581ECC5B3500AA5B37 /* Supporting Files */,
-				D20394FD1ED90CD100B3BFB0 /* NQTinyNews-PrefixHeader.pch */,
 			);
 			path = NQTinyNews;
 			sourceTree = "<group>";
@@ -292,6 +301,12 @@
 		D26287581ECC5B3500AA5B37 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D26287611ECC5B3500AA5B37 /* Main.storyboard */,
+				D26287691ECC5B3500AA5B37 /* LaunchScreen.storyboard */,
+				D26287641ECC5B3500AA5B37 /* NQTinyNews.xcdatamodeld */,
+				D262876C1ECC5B3500AA5B37 /* Info.plist */,
+				D26287671ECC5B3500AA5B37 /* Assets.xcassets */,
+				D20394FD1ED90CD100B3BFB0 /* NQTinyNews-PrefixHeader.pch */,
 				D26287591ECC5B3500AA5B37 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -313,6 +328,74 @@
 				D26287821ECC5B3500AA5B37 /* Info.plist */,
 			);
 			path = NQTinyNewsUITests;
+			sourceTree = "<group>";
+		};
+		D2D529EE1F60F7F500E13B02 /* WeakObject */ = {
+			isa = PBXGroup;
+			children = (
+				D25813941F42C13B00C7A01A /* TCWeakObject.h */,
+				D25813951F42C13B00C7A01A /* TCWeakObject.m */,
+				D2CDF07C1F42862C0041E785 /* TCGeneralService.h */,
+				D2CDF07D1F42862C0041E785 /* TCGeneralService.m */,
+			);
+			path = WeakObject;
+			sourceTree = "<group>";
+		};
+		D2D529EF1F60F87200E13B02 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D2D529F11F60FDA400E13B02 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D2D529F41F60FE1300E13B02 /* View */,
+				D20394FE1ED93BE900B3BFB0 /* TNTableFlowVC.h */,
+				D20394FF1ED93BE900B3BFB0 /* TNTableFlowVC.m */,
+				D2838CEA1F62879E00FC6F06 /* TNWebviewVC.h */,
+				D2838CEB1F62879E00FC6F06 /* TNWebviewVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D2D529F21F60FDD700E13B02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D20395031ED95E3400B3BFB0 /* TNHomeNewsModel.h */,
+				D20395041ED95E3400B3BFB0 /* TNHomeNewsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2D529F31F60FDEF00E13B02 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D2D529F81F6162BB00E13B02 /* Public */,
+				D2D529F51F61608A00E13B02 /* TNViewModelClass.h */,
+				D2D529F61F61608A00E13B02 /* TNViewModelClass.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D2D529F41F60FE1300E13B02 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D23551321EE9885B00986180 /* TNImageTitleStyleTBCell.h */,
+				D23551331EE9885B00986180 /* TNImageTitleStyleTBCell.m */,
+				D23551341EE9885B00986180 /* TNImageTitleStyleTBCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2D529F81F6162BB00E13B02 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				D2D529F91F61633300E13B02 /* TNFetchTableFlowDataVM.h */,
+				D2D529FA1F61633300E13B02 /* TNFetchTableFlowDataVM.m */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 		EAAD42BD89EAFC3396AC51E1 /* Pods */ = {
@@ -510,7 +593,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -523,23 +606,28 @@
 				D20394F41ED7FE2900B3BFB0 /* ZJContentView.m in Sources */,
 				D23BA72E1EF7CA0000D44C1B /* TNBaseNavigationVC.m in Sources */,
 				D20394D51ED7EAA400B3BFB0 /* TNRootVC.m in Sources */,
+				D2D529FB1F61633300E13B02 /* TNFetchTableFlowDataVM.m in Sources */,
 				D20395051ED95E3400B3BFB0 /* TNHomeNewsModel.m in Sources */,
 				D20394F11ED7FE2900B3BFB0 /* UIView+ZJFrame.m in Sources */,
 				D23551351EE9885B00986180 /* TNImageTitleStyleTBCell.m in Sources */,
 				D20394F51ED7FE2900B3BFB0 /* ZJScrollPageView.m in Sources */,
 				D23210D41ECC663E006B1267 /* NSURLSessionTool.m in Sources */,
 				D262875D1ECC5B3500AA5B37 /* AppDelegate.m in Sources */,
+				D25813961F42C13B00C7A01A /* TCWeakObject.m in Sources */,
 				D20395001ED93BE900B3BFB0 /* TNTableFlowVC.m in Sources */,
 				D20394F31ED7FE2900B3BFB0 /* ZJCollectionView.m in Sources */,
+				D2838CEC1F62879E00FC6F06 /* TNWebviewVC.m in Sources */,
 				D29EFE2A1EF7D066007D9FB5 /* TNBaseVC.m in Sources */,
 				D262875A1ECC5B3500AA5B37 /* main.m in Sources */,
 				D20394F81ED7FE2900B3BFB0 /* ZJTitleView.m in Sources */,
 				D20394F61ED7FE2900B3BFB0 /* ZJScrollSegmentView.m in Sources */,
 				D20394F21ED7FE2900B3BFB0 /* UIViewController+ZJScrollPageController.m in Sources */,
 				D2FE027E1ECE952E00CE83D7 /* TNNetworkManager.m in Sources */,
+				D2D529F71F61608A00E13B02 /* TNViewModelClass.m in Sources */,
 				D20394DD1ED7F69100B3BFB0 /* HomePageVC.m in Sources */,
 				D26287661ECC5B3500AA5B37 /* NQTinyNews.xcdatamodeld in Sources */,
 				D20394F71ED7FE2900B3BFB0 /* ZJSegmentStyle.m in Sources */,
+				D2CDF07E1F42862C0041E785 /* TCGeneralService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

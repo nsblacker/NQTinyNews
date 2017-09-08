@@ -17,6 +17,7 @@ PODS:
   - JSONModel (1.7.0)
   - Masonry (1.0.2)
   - MJRefresh (3.1.12)
+  - SVProgressHUD (2.2)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -26,6 +27,7 @@ DEPENDENCIES:
   - JSONModel (~> 1.7.0)
   - Masonry
   - MJRefresh
+  - SVProgressHUD
   - YYKit
 
 SPEC CHECKSUMS:
@@ -33,8 +35,9 @@ SPEC CHECKSUMS:
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  SVProgressHUD: 3f37f3409ddb15f35c99315ae7dc33c474aa3256
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: f82634acb6360b23d0630f6c60e71027a3845924
+PODFILE CHECKSUM: 3a0e87f824fcbed306a2147105551e3698af3db3
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1

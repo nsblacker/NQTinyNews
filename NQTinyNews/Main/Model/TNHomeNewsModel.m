@@ -7,7 +7,7 @@
 //
 
 #import "TNHomeNewsModel.h"
-
 @implementation TNHomeNewsModel
+
 
 @end
