@@ -10,9 +10,7 @@
 @class TNHomeNewsModel;
 
 @interface TNImageTitleStyleTBCell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UIImageView *newsThumbnail;
-@property (strong, nonatomic) IBOutlet UILabel *newsTitle;
-@property (strong, nonatomic) IBOutlet UILabel *newsSource;
-
+@property (strong, nonatomic) UIImageView *mThumbnailImg;
+@property (strong, nonatomic) UILabel *mTitleLab;
 - (void)configCellWithModel:(id)model;
 @end

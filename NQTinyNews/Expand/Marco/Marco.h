@@ -57,6 +57,10 @@ NSLog(@"%s",__func__);\
 //颜色
 #define RGB(a,b,c) [UIColor colorWithRed:(a/255.0) green:(b/255.0) blue:(c/255.0) alpha:1.0]
 #define RGBA(a,b,c,d) [UIColor colorWithRed:(a/255.0) green:(b/255.0) blue:(c/255.0) alpha:d]
+#define HEXColor(HexValue) \
+[UIColor colorWithRed:((float)((HexValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((HexValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(HexValue & 0xFF))/255.0 alpha:1.0]
 
 //尺寸
 #define ScreenHeight                    MAX([[UIScreen mainScreen] bounds].size.width,[[UIScreen mainScreen] bounds].size.height)

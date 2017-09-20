@@ -32,7 +32,6 @@
 
     HomePageVC *homePageVC = [[HomePageVC alloc]init];
     homePageVC.title = @"home";
-    homePageVC.view.backgroundColor = [UIColor redColor];
     TNBaseNavigationVC *homePageNVC = [[TNBaseNavigationVC alloc]initWithRootViewController:homePageVC];
     
     UIViewController *tmpVC1 = [[UIViewController alloc]init];

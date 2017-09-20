@@ -12,5 +12,7 @@ typedef NS_ENUM(NSUInteger,TNBaseVCType) {
     TNBaseVCTypeWith,
 };
 @interface TNBaseVC : UIViewController
-
+- (void)setLeftItem:(id)left;
+- (void)setLeftItem:(id)left responeSEL:(SEL)action;
+- (void)setRightItem:(id)right responeSEL:(SEL)action;
 @end

@@ -14,26 +14,22 @@
 @property(nonatomic, strong)NSArray<NSString *>*titles;
 @property(nonatomic, strong)NSArray<NSString *>*types;
 @property(nonatomic, strong)ZJScrollPageView *segmentV;
-//@property(nonatomic, strong)
 @end
 
 @implementation HomePageVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
     self.title = @"首页";
-    self.automaticallyAdjustsScrollViewInsets = NO;
-
+    
     [self dataInitialty];
     
     [self setupUI];
-    
 }
 
 #pragma -mark UI
 - (void)setupUI{
-    
     [self.view addSubview:self.segmentV];
 }
 

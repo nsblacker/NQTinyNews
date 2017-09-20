@@ -10,6 +10,8 @@
 #define TNBaseClasses_h
 
 #import "TNViewModelClass.h"
+#import "TNBaseVC.h"
+#import "TNBaseNavigationVC.h"
 
 #endif /* TNBaseClasses_h */
 

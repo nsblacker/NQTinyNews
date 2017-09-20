@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ZJScrollPageView.h"
 
-@interface TNTableFlowVC : UIViewController<ZJScrollPageViewChildVcDelegate,UITableViewDataSource,UITableViewDelegate>
+@interface TNTableFlowVC : TNBaseVC<ZJScrollPageViewChildVcDelegate,UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic, copy)NSString *newsType;
 
 @end

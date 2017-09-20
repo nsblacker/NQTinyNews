@@ -22,7 +22,6 @@
 		D20395051ED95E3400B3BFB0 /* TNHomeNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D20395041ED95E3400B3BFB0 /* TNHomeNewsModel.m */; };
 		D23210D41ECC663E006B1267 /* NSURLSessionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D23210D31ECC663E006B1267 /* NSURLSessionTool.m */; };
 		D23551351EE9885B00986180 /* TNImageTitleStyleTBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D23551331EE9885B00986180 /* TNImageTitleStyleTBCell.m */; };
-		D23551361EE9885B00986180 /* TNImageTitleStyleTBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23551341EE9885B00986180 /* TNImageTitleStyleTBCell.xib */; };
 		D23BA72E1EF7CA0000D44C1B /* TNBaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D23BA72D1EF7CA0000D44C1B /* TNBaseNavigationVC.m */; };
 		D25813961F42C13B00C7A01A /* TCWeakObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D25813951F42C13B00C7A01A /* TCWeakObject.m */; };
 		D262875A1ECC5B3500AA5B37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D26287591ECC5B3500AA5B37 /* main.m */; };
@@ -95,7 +94,6 @@
 		D23210D91ECC672E006B1267 /* Marco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marco.h; sourceTree = "<group>"; };
 		D23551321EE9885B00986180 /* TNImageTitleStyleTBCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNImageTitleStyleTBCell.h; sourceTree = "<group>"; };
 		D23551331EE9885B00986180 /* TNImageTitleStyleTBCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNImageTitleStyleTBCell.m; sourceTree = "<group>"; };
-		D23551341EE9885B00986180 /* TNImageTitleStyleTBCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNImageTitleStyleTBCell.xib; sourceTree = "<group>"; };
 		D23BA72C1EF7CA0000D44C1B /* TNBaseNavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNBaseNavigationVC.h; sourceTree = "<group>"; };
 		D23BA72D1EF7CA0000D44C1B /* TNBaseNavigationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNBaseNavigationVC.m; sourceTree = "<group>"; };
 		D25813941F42C13B00C7A01A /* TCWeakObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TCWeakObject.h; path = NQTinyNews/Expand/WeakObject/TCWeakObject.h; sourceTree = SOURCE_ROOT; };
@@ -384,7 +382,6 @@
 			children = (
 				D23551321EE9885B00986180 /* TNImageTitleStyleTBCell.h */,
 				D23551331EE9885B00986180 /* TNImageTitleStyleTBCell.m */,
-				D23551341EE9885B00986180 /* TNImageTitleStyleTBCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -529,7 +526,6 @@
 			files = (
 				D262876B1ECC5B3500AA5B37 /* LaunchScreen.storyboard in Resources */,
 				D26287681ECC5B3500AA5B37 /* Assets.xcassets in Resources */,
-				D23551361EE9885B00986180 /* TNImageTitleStyleTBCell.xib in Resources */,
 				D26287631ECC5B3500AA5B37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

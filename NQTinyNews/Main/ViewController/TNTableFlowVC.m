@@ -67,8 +67,7 @@ static NSString *const TNImageTitleStyleTBCellIndentifier = @"TNImageTitleStyleT
         _flowTable.dataSource = self;
         _flowTable.delegate = self;
         _flowTable.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-        [_flowTable registerNib:[UINib nibWithNibName:NSStringFromClass([TNImageTitleStyleTBCell class]) bundle:[NSBundle mainBundle]]forCellReuseIdentifier:TNImageTitleStyleTBCellIndentifier];
-        
+        [_flowTable registerClass:[TNImageTitleStyleTBCell class] forCellReuseIdentifier:TNImageTitleStyleTBCellIndentifier];
         _flowTable.mj_header = [MJRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(createFetchTableFlowDataVM)];
     }
     return _flowTable;
@@ -133,13 +132,17 @@ static NSString *const TNImageTitleStyleTBCellIndentifier = @"TNImageTitleStyleT
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    return 150;
+    return 80;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     TNFetchTableFlowDataVM *fetchTableFlowDataVM = [[TNFetchTableFlowDataVM alloc]init];
     [fetchTableFlowDataVM tinynewsDetailWithModel:_flowTableData[indexPath.row] topViewController:self];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    });
 }
+
 
 #pragma -mark Override
 - (void)didReceiveMemoryWarning {

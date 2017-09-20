@@ -8,6 +8,7 @@
 
 #import "TNWebviewVC.h"
 #import <WebKit/WebKit.h>
+#import <Masonry.h>
 
 @interface TNWebviewVC ()<WKUIDelegate,WKNavigationDelegate>
 @property(nonatomic ,strong)WKWebView *webView;
@@ -19,9 +20,18 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = YES;
     [self.view addSubview:self.webView];
     [self.view addSubview:self.progressView];
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_urlStr]]];
+}
+
+- (void)leftSEL{
+    if(_webView.canGoBack){
+        [_webView goBack];
+    }else{
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 #pragma -mark -lazy UI
@@ -37,7 +47,7 @@
 
 -(UIProgressView*)progressView{
     if(!_progressView){
-        _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0,64, ScreenWidth, 0)];
+        _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0,CGRectGetMaxY(self.navigationController.navigationBar.frame), ScreenWidth, 0)];
         self.progressView.tintColor = [UIColor redColor];
         self.progressView.trackTintColor = [UIColor whiteColor];
     }
@@ -66,7 +76,5 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
-
 
 @end
