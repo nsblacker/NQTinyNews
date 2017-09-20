@@ -82,7 +82,8 @@ blue:((float)(HexValue & 0xFF))/255.0 alpha:1.0]
 #define height_ViewWithNav_Tab (ScreenHeight  - height_NavigationBar - height_TabBar)
 #define height_ViewWithNav_Tab_Seg (ScreenHeight  - height_NavigationBar - height_TabBar - height_Segment)
 
-
+//系统
+#define higheriOS(systemVer) [[[UIDevice currentDevice]systemVersion] floatValue] >= systemVer
 
 #endif /* Marco_h */
 

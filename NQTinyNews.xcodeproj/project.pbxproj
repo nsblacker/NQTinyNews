@@ -20,6 +20,9 @@
 		D20394F81ED7FE2900B3BFB0 /* ZJTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394F01ED7FE2900B3BFB0 /* ZJTitleView.m */; };
 		D20395001ED93BE900B3BFB0 /* TNTableFlowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394FF1ED93BE900B3BFB0 /* TNTableFlowVC.m */; };
 		D20395051ED95E3400B3BFB0 /* TNHomeNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D20395041ED95E3400B3BFB0 /* TNHomeNewsModel.m */; };
+		D20998881F725DE3005B002E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20998871F725DE3005B002E /* NotificationCenter.framework */; };
+		D209988C1F725DE3005B002E /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D209988B1F725DE3005B002E /* TodayViewController.m */; };
+		D20998931F725DE3005B002E /* TNWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D20998861F725DE3005B002E /* TNWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D23210D41ECC663E006B1267 /* NSURLSessionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D23210D31ECC663E006B1267 /* NSURLSessionTool.m */; };
 		D23551351EE9885B00986180 /* TNImageTitleStyleTBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D23551331EE9885B00986180 /* TNImageTitleStyleTBCell.m */; };
 		D23BA72E1EF7CA0000D44C1B /* TNBaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D23BA72D1EF7CA0000D44C1B /* TNBaseNavigationVC.m */; };
@@ -41,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D20998911F725DE3005B002E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D262874D1ECC5B3500AA5B37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D20998851F725DE3005B002E;
+			remoteInfo = TNWidget;
+		};
 		D26287721ECC5B3500AA5B37 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D262874D1ECC5B3500AA5B37 /* Project object */;
@@ -56,6 +66,20 @@
 			remoteInfo = NQTinyNews;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D20998971F725DE3005B002E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D20998931F725DE3005B002E /* TNWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9CB8B0DFB63A26D3B5893393 /* libPods-NQTinyNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NQTinyNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +112,13 @@
 		D20394FF1ED93BE900B3BFB0 /* TNTableFlowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTableFlowVC.m; sourceTree = "<group>"; };
 		D20395031ED95E3400B3BFB0 /* TNHomeNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNHomeNewsModel.h; sourceTree = "<group>"; };
 		D20395041ED95E3400B3BFB0 /* TNHomeNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNHomeNewsModel.m; sourceTree = "<group>"; };
+		D20998861F725DE3005B002E /* TNWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TNWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20998871F725DE3005B002E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		D209988A1F725DE3005B002E /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		D209988B1F725DE3005B002E /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		D20998901F725DE3005B002E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20998981F726AC5005B002E /* NQTinyNews.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NQTinyNews.entitlements; sourceTree = "<group>"; };
+		D20998991F726AF9005B002E /* TNWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TNWidget.entitlements; sourceTree = "<group>"; };
 		D23210D21ECC663E006B1267 /* NSURLSessionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionTool.h; sourceTree = "<group>"; };
 		D23210D31ECC663E006B1267 /* NSURLSessionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionTool.m; sourceTree = "<group>"; };
 		D23210D81ECC6710006B1267 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
@@ -129,6 +160,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D20998831F725DE3005B002E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20998881F725DE3005B002E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D26287521ECC5B3500AA5B37 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,9 +256,28 @@
 			path = ZJScrollPageView;
 			sourceTree = "<group>";
 		};
+		D20998811F725CC8005B002E /* TodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TodayExtension;
+			sourceTree = "<group>";
+		};
+		D20998891F725DE3005B002E /* TNWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D20998991F726AF9005B002E /* TNWidget.entitlements */,
+				D209988A1F725DE3005B002E /* TodayViewController.h */,
+				D209988B1F725DE3005B002E /* TodayViewController.m */,
+				D20998901F725DE3005B002E /* Info.plist */,
+			);
+			path = TNWidget;
+			sourceTree = "<group>";
+		};
 		D23210CD1ECC5D3F006B1267 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				D20998811F725CC8005B002E /* TodayExtension */,
 				D2D529EE1F60F7F500E13B02 /* WeakObject */,
 				D20394D61ED7EAF400B3BFB0 /* Others */,
 				D23210D61ECC66BC006B1267 /* Marco */,
@@ -266,6 +324,7 @@
 				D26287571ECC5B3500AA5B37 /* NQTinyNews */,
 				D26287741ECC5B3500AA5B37 /* NQTinyNewsTests */,
 				D262877F1ECC5B3500AA5B37 /* NQTinyNewsUITests */,
+				D20998891F725DE3005B002E /* TNWidget */,
 				D26287561ECC5B3500AA5B37 /* Products */,
 				EAAD42BD89EAFC3396AC51E1 /* Pods */,
 				F93E8B2B0B9D6EBE7EE6E6DD /* Frameworks */,
@@ -278,6 +337,7 @@
 				D26287551ECC5B3500AA5B37 /* NQTinyNews.app */,
 				D26287711ECC5B3500AA5B37 /* NQTinyNewsTests.xctest */,
 				D262877C1ECC5B3500AA5B37 /* NQTinyNewsUITests.xctest */,
+				D20998861F725DE3005B002E /* TNWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -285,6 +345,7 @@
 		D26287571ECC5B3500AA5B37 /* NQTinyNews */ = {
 			isa = PBXGroup;
 			children = (
+				D20998981F726AC5005B002E /* NQTinyNews.entitlements */,
 				D2D529EF1F60F87200E13B02 /* Resource */,
 				D20394DE1ED7FE2900B3BFB0 /* Vender */,
 				D23210CD1ECC5D3F006B1267 /* Expand */,
@@ -408,6 +469,7 @@
 			isa = PBXGroup;
 			children = (
 				9CB8B0DFB63A26D3B5893393 /* libPods-NQTinyNews.a */,
+				D20998871F725DE3005B002E /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -415,6 +477,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D20998851F725DE3005B002E /* TNWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20998941F725DE3005B002E /* Build configuration list for PBXNativeTarget "TNWidget" */;
+			buildPhases = (
+				D20998821F725DE3005B002E /* Sources */,
+				D20998831F725DE3005B002E /* Frameworks */,
+				D20998841F725DE3005B002E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TNWidget;
+			productName = TNWidget;
+			productReference = D20998861F725DE3005B002E /* TNWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D26287541ECC5B3500AA5B37 /* NQTinyNews */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D26287851ECC5B3500AA5B37 /* Build configuration list for PBXNativeTarget "NQTinyNews" */;
@@ -425,10 +504,12 @@
 				D26287531ECC5B3500AA5B37 /* Resources */,
 				181362DF6BC0F7B4B97708BD /* [CP] Embed Pods Frameworks */,
 				4BCAB768E902F6B8824115BC /* [CP] Copy Pods Resources */,
+				D20998971F725DE3005B002E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D20998921F725DE3005B002E /* PBXTargetDependency */,
 			);
 			name = NQTinyNews;
 			productName = NQTinyNews;
@@ -480,10 +561,24 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "那强";
 				TargetAttributes = {
+					D20998851F725DE3005B002E = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 32K8UBGZ48;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					D26287541ECC5B3500AA5B37 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 32K8UBGZ48;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					D26287701ECC5B3500AA5B37 = {
 						CreatedOnToolsVersion = 8.0;
@@ -515,11 +610,19 @@
 				D26287541ECC5B3500AA5B37 /* NQTinyNews */,
 				D26287701ECC5B3500AA5B37 /* NQTinyNewsTests */,
 				D262877B1ECC5B3500AA5B37 /* NQTinyNewsUITests */,
+				D20998851F725DE3005B002E /* TNWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D20998841F725DE3005B002E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D26287531ECC5B3500AA5B37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -595,6 +698,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D20998821F725DE3005B002E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D209988C1F725DE3005B002E /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D26287511ECC5B3500AA5B37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -646,6 +757,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D20998921F725DE3005B002E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D20998851F725DE3005B002E /* TNWidget */;
+			targetProxy = D20998911F725DE3005B002E /* PBXContainerItemProxy */;
+		};
 		D26287731ECC5B3500AA5B37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D26287541ECC5B3500AA5B37 /* NQTinyNews */;
@@ -678,6 +794,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D20998951F725DE3005B002E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = TNWidget/TNWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 32K8UBGZ48;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TNWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tcl.nq.NQTinyNews.TNWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D20998961F725DE3005B002E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = TNWidget/TNWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 32K8UBGZ48;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TNWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tcl.nq.NQTinyNews.TNWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D26287831ECC5B3500AA5B37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -771,6 +937,8 @@
 			baseConfigurationReference = B3B613A176BF06596443E838 /* Pods-NQTinyNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NQTinyNews/NQTinyNews.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 32K8UBGZ48;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NQTinyNews/NQTinyNews-PrefixHeader.pch";
@@ -788,6 +956,8 @@
 			baseConfigurationReference = BAF564144EC2355976090972 /* Pods-NQTinyNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NQTinyNews/NQTinyNews.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 32K8UBGZ48;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NQTinyNews/NQTinyNews-PrefixHeader.pch";
@@ -853,6 +1023,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D20998941F725DE3005B002E /* Build configuration list for PBXNativeTarget "TNWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20998951F725DE3005B002E /* Debug */,
+				D20998961F725DE3005B002E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D26287501ECC5B3500AA5B37 /* Build configuration list for PBXProject "NQTinyNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

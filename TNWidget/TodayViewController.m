@@ -8,6 +8,7 @@
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
+#import "Marco.h"
 
 @interface TodayViewController () <NCWidgetProviding>
 
@@ -18,11 +19,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    if(higheriOS(10)){
+        self.extensionContext.widgetLargestAvailableDisplayMode = NCWidgetDisplayModeExpanded;
+    }
+    self.preferredContentSize = CGSizeMake(ScreenWidth, 110);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
 }
 
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler {
