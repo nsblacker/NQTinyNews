@@ -20,6 +20,11 @@
 		D20394F81ED7FE2900B3BFB0 /* ZJTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394F01ED7FE2900B3BFB0 /* ZJTitleView.m */; };
 		D20395001ED93BE900B3BFB0 /* TNTableFlowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D20394FF1ED93BE900B3BFB0 /* TNTableFlowVC.m */; };
 		D20395051ED95E3400B3BFB0 /* TNHomeNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D20395041ED95E3400B3BFB0 /* TNHomeNewsModel.m */; };
+		D2098F931F8B717000E76957 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2098F921F8B717000E76957 /* ShareViewController.m */; };
+		D2098F9A1F8B717000E76957 /* TNShareExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2098F8F1F8B717000E76957 /* TNShareExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2098FA61F8B792600E76957 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2098FA51F8B792600E76957 /* ActionViewController.m */; };
+		D2098FA91F8B792600E76957 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2098FA71F8B792600E76957 /* MainInterface.storyboard */; };
+		D2098FAD1F8B792600E76957 /* TNActionExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2098FA21F8B792600E76957 /* TNActionExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D20998881F725DE3005B002E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20998871F725DE3005B002E /* NotificationCenter.framework */; };
 		D209988C1F725DE3005B002E /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D209988B1F725DE3005B002E /* TodayViewController.m */; };
 		D20998931F725DE3005B002E /* TNWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D20998861F725DE3005B002E /* TNWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -44,6 +49,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D2098F981F8B717000E76957 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D262874D1ECC5B3500AA5B37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2098F8E1F8B717000E76957;
+			remoteInfo = TNShareExt;
+		};
+		D2098FAB1F8B792600E76957 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D262874D1ECC5B3500AA5B37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2098FA11F8B792600E76957;
+			remoteInfo = TNActionExt;
+		};
 		D20998911F725DE3005B002E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D262874D1ECC5B3500AA5B37 /* Project object */;
@@ -74,6 +93,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				D2098F9A1F8B717000E76957 /* TNShareExt.appex in Embed App Extensions */,
+				D2098FAD1F8B792600E76957 /* TNActionExt.appex in Embed App Extensions */,
 				D20998931F725DE3005B002E /* TNWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -112,6 +133,15 @@
 		D20394FF1ED93BE900B3BFB0 /* TNTableFlowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTableFlowVC.m; sourceTree = "<group>"; };
 		D20395031ED95E3400B3BFB0 /* TNHomeNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNHomeNewsModel.h; sourceTree = "<group>"; };
 		D20395041ED95E3400B3BFB0 /* TNHomeNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNHomeNewsModel.m; sourceTree = "<group>"; };
+		D2098F8F1F8B717000E76957 /* TNShareExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TNShareExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2098F911F8B717000E76957 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		D2098F921F8B717000E76957 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		D2098F971F8B717000E76957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2098FA21F8B792600E76957 /* TNActionExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TNActionExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2098FA41F8B792600E76957 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		D2098FA51F8B792600E76957 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		D2098FA81F8B792600E76957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D2098FAA1F8B792600E76957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20998861F725DE3005B002E /* TNWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TNWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20998871F725DE3005B002E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		D209988A1F725DE3005B002E /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -160,6 +190,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D2098F8C1F8B717000E76957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2098F9F1F8B792600E76957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D20998831F725DE3005B002E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +300,27 @@
 			path = ZJScrollPageView;
 			sourceTree = "<group>";
 		};
+		D2098F901F8B717000E76957 /* TNShareExt */ = {
+			isa = PBXGroup;
+			children = (
+				D2098F911F8B717000E76957 /* ShareViewController.h */,
+				D2098F921F8B717000E76957 /* ShareViewController.m */,
+				D2098F971F8B717000E76957 /* Info.plist */,
+			);
+			path = TNShareExt;
+			sourceTree = "<group>";
+		};
+		D2098FA31F8B792600E76957 /* TNActionExt */ = {
+			isa = PBXGroup;
+			children = (
+				D2098FA41F8B792600E76957 /* ActionViewController.h */,
+				D2098FA51F8B792600E76957 /* ActionViewController.m */,
+				D2098FA71F8B792600E76957 /* MainInterface.storyboard */,
+				D2098FAA1F8B792600E76957 /* Info.plist */,
+			);
+			path = TNActionExt;
+			sourceTree = "<group>";
+		};
 		D20998811F725CC8005B002E /* TodayExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +390,8 @@
 				D26287741ECC5B3500AA5B37 /* NQTinyNewsTests */,
 				D262877F1ECC5B3500AA5B37 /* NQTinyNewsUITests */,
 				D20998891F725DE3005B002E /* TNWidget */,
+				D2098F901F8B717000E76957 /* TNShareExt */,
+				D2098FA31F8B792600E76957 /* TNActionExt */,
 				D26287561ECC5B3500AA5B37 /* Products */,
 				EAAD42BD89EAFC3396AC51E1 /* Pods */,
 				F93E8B2B0B9D6EBE7EE6E6DD /* Frameworks */,
@@ -338,6 +405,8 @@
 				D26287711ECC5B3500AA5B37 /* NQTinyNewsTests.xctest */,
 				D262877C1ECC5B3500AA5B37 /* NQTinyNewsUITests.xctest */,
 				D20998861F725DE3005B002E /* TNWidget.appex */,
+				D2098F8F1F8B717000E76957 /* TNShareExt.appex */,
+				D2098FA21F8B792600E76957 /* TNActionExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -477,6 +546,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D2098F8E1F8B717000E76957 /* TNShareExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2098F9D1F8B717000E76957 /* Build configuration list for PBXNativeTarget "TNShareExt" */;
+			buildPhases = (
+				D2098F8B1F8B717000E76957 /* Sources */,
+				D2098F8C1F8B717000E76957 /* Frameworks */,
+				D2098F8D1F8B717000E76957 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TNShareExt;
+			productName = TNShareExt;
+			productReference = D2098F8F1F8B717000E76957 /* TNShareExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D2098FA11F8B792600E76957 /* TNActionExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2098FAE1F8B792600E76957 /* Build configuration list for PBXNativeTarget "TNActionExt" */;
+			buildPhases = (
+				D2098F9E1F8B792600E76957 /* Sources */,
+				D2098F9F1F8B792600E76957 /* Frameworks */,
+				D2098FA01F8B792600E76957 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TNActionExt;
+			productName = TNActionExt;
+			productReference = D2098FA21F8B792600E76957 /* TNActionExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D20998851F725DE3005B002E /* TNWidget */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D20998941F725DE3005B002E /* Build configuration list for PBXNativeTarget "TNWidget" */;
@@ -510,6 +613,8 @@
 			);
 			dependencies = (
 				D20998921F725DE3005B002E /* PBXTargetDependency */,
+				D2098F991F8B717000E76957 /* PBXTargetDependency */,
+				D2098FAC1F8B792600E76957 /* PBXTargetDependency */,
 			);
 			name = NQTinyNews;
 			productName = NQTinyNews;
@@ -561,6 +666,16 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "那强";
 				TargetAttributes = {
+					D2098F8E1F8B717000E76957 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 32K8UBGZ48;
+						ProvisioningStyle = Automatic;
+					};
+					D2098FA11F8B792600E76957 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 32K8UBGZ48;
+						ProvisioningStyle = Automatic;
+					};
 					D20998851F725DE3005B002E = {
 						CreatedOnToolsVersion = 9.0;
 						DevelopmentTeam = 32K8UBGZ48;
@@ -611,11 +726,28 @@
 				D26287701ECC5B3500AA5B37 /* NQTinyNewsTests */,
 				D262877B1ECC5B3500AA5B37 /* NQTinyNewsUITests */,
 				D20998851F725DE3005B002E /* TNWidget */,
+				D2098F8E1F8B717000E76957 /* TNShareExt */,
+				D2098FA11F8B792600E76957 /* TNActionExt */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D2098F8D1F8B717000E76957 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2098FA01F8B792600E76957 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2098FA91F8B792600E76957 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D20998841F725DE3005B002E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -698,6 +830,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D2098F8B1F8B717000E76957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2098F931F8B717000E76957 /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2098F9E1F8B792600E76957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2098FA61F8B792600E76957 /* ActionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D20998821F725DE3005B002E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -757,6 +905,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D2098F991F8B717000E76957 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2098F8E1F8B717000E76957 /* TNShareExt */;
+			targetProxy = D2098F981F8B717000E76957 /* PBXContainerItemProxy */;
+		};
+		D2098FAC1F8B792600E76957 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2098FA11F8B792600E76957 /* TNActionExt */;
+			targetProxy = D2098FAB1F8B792600E76957 /* PBXContainerItemProxy */;
+		};
 		D20998921F725DE3005B002E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D20998851F725DE3005B002E /* TNWidget */;
@@ -775,6 +933,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D2098FA71F8B792600E76957 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2098FA81F8B792600E76957 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		D26287611ECC5B3500AA5B37 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -794,6 +960,114 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D2098F9B1F8B717000E76957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32K8UBGZ48;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TNShareExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tcl.nq.NQTinyNews.TNShareExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2098F9C1F8B717000E76957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32K8UBGZ48;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TNShareExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tcl.nq.NQTinyNews.TNShareExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2098FAF1F8B792600E76957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32K8UBGZ48;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TNActionExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tcl.nq.NQTinyNews.TNActionExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2098FB01F8B792600E76957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32K8UBGZ48;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TNActionExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tcl.nq.NQTinyNews.TNActionExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D20998951F725DE3005B002E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -810,7 +1084,7 @@
 				DEVELOPMENT_TEAM = 32K8UBGZ48;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = TNWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tcl.nq.NQTinyNews.TNWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -835,7 +1109,7 @@
 				DEVELOPMENT_TEAM = 32K8UBGZ48;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = TNWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tcl.nq.NQTinyNews.TNWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1023,6 +1297,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D2098F9D1F8B717000E76957 /* Build configuration list for PBXNativeTarget "TNShareExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2098F9B1F8B717000E76957 /* Debug */,
+				D2098F9C1F8B717000E76957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2098FAE1F8B792600E76957 /* Build configuration list for PBXNativeTarget "TNActionExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2098FAF1F8B792600E76957 /* Debug */,
+				D2098FB01F8B792600E76957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D20998941F725DE3005B002E /* Build configuration list for PBXNativeTarget "TNWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1030,6 +1322,7 @@
 				D20998961F725DE3005B002E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D26287501ECC5B3500AA5B37 /* Build configuration list for PBXProject "NQTinyNews" */ = {
 			isa = XCConfigurationList;
