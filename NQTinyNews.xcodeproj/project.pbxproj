@@ -42,6 +42,7 @@
 		D26287811ECC5B3500AA5B37 /* NQTinyNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D26287801ECC5B3500AA5B37 /* NQTinyNewsUITests.m */; };
 		D2838CEC1F62879E00FC6F06 /* TNWebviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2838CEB1F62879E00FC6F06 /* TNWebviewVC.m */; };
 		D29EFE2A1EF7D066007D9FB5 /* TNBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EFE291EF7D066007D9FB5 /* TNBaseVC.m */; };
+		D2A6A7C11F9DEFD7002E7936 /* TNFeedPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A6A7C01F9DEFD7002E7936 /* TNFeedPageVC.m */; };
 		D2CDF07E1F42862C0041E785 /* TCGeneralService.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CDF07D1F42862C0041E785 /* TCGeneralService.m */; };
 		D2D529F71F61608A00E13B02 /* TNViewModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D529F61F61608A00E13B02 /* TNViewModelClass.m */; };
 		D2D529FB1F61633300E13B02 /* TNFetchTableFlowDataVM.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D529FA1F61633300E13B02 /* TNFetchTableFlowDataVM.m */; };
@@ -178,6 +179,9 @@
 		D2838CEB1F62879E00FC6F06 /* TNWebviewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNWebviewVC.m; sourceTree = "<group>"; };
 		D29EFE281EF7D066007D9FB5 /* TNBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNBaseVC.h; sourceTree = "<group>"; };
 		D29EFE291EF7D066007D9FB5 /* TNBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNBaseVC.m; sourceTree = "<group>"; };
+		D2A6A7BF1F9DEFD7002E7936 /* TNFeedPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNFeedPageVC.h; sourceTree = "<group>"; };
+		D2A6A7C01F9DEFD7002E7936 /* TNFeedPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNFeedPageVC.m; sourceTree = "<group>"; };
+		D2A6A7C31F9EE42C002E7936 /* image_face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_face.jpg; sourceTree = "<group>"; };
 		D2CDF07C1F42862C0041E785 /* TCGeneralService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCGeneralService.h; sourceTree = "<group>"; };
 		D2CDF07D1F42862C0041E785 /* TCGeneralService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCGeneralService.m; sourceTree = "<group>"; };
 		D2D529F51F61608A00E13B02 /* TNViewModelClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNViewModelClass.h; sourceTree = "<group>"; };
@@ -264,6 +268,8 @@
 				D20394D41ED7EAA400B3BFB0 /* TNRootVC.m */,
 				D20394DB1ED7F69100B3BFB0 /* HomePageVC.h */,
 				D20394DC1ED7F69100B3BFB0 /* HomePageVC.m */,
+				D2A6A7BF1F9DEFD7002E7936 /* TNFeedPageVC.h */,
+				D2A6A7C01F9DEFD7002E7936 /* TNFeedPageVC.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -458,6 +464,14 @@
 			path = NQTinyNewsUITests;
 			sourceTree = "<group>";
 		};
+		D2A6A7C21F9EE0D1002E7936 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D2A6A7C31F9EE42C002E7936 /* image_face.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		D2D529EE1F60F7F500E13B02 /* WeakObject */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,6 +486,7 @@
 		D2D529EF1F60F87200E13B02 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D2A6A7C21F9EE0D1002E7936 /* images */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -861,6 +876,7 @@
 				D20394F41ED7FE2900B3BFB0 /* ZJContentView.m in Sources */,
 				D23BA72E1EF7CA0000D44C1B /* TNBaseNavigationVC.m in Sources */,
 				D20394D51ED7EAA400B3BFB0 /* TNRootVC.m in Sources */,
+				D2A6A7C11F9DEFD7002E7936 /* TNFeedPageVC.m in Sources */,
 				D2D529FB1F61633300E13B02 /* TNFetchTableFlowDataVM.m in Sources */,
 				D20395051ED95E3400B3BFB0 /* TNHomeNewsModel.m in Sources */,
 				D20394F11ED7FE2900B3BFB0 /* UIView+ZJFrame.m in Sources */,

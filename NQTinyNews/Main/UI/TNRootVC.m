@@ -9,6 +9,7 @@
 #import "TNRootVC.h"
 #import "TNBaseNavigationVC.h"
 #import "HomePageVC.h"
+#import "TNFeedPageVC.h"
 
 @interface TNRootVC ()
 
@@ -34,7 +35,7 @@
     homePageVC.title = @"home";
     TNBaseNavigationVC *homePageNVC = [[TNBaseNavigationVC alloc]initWithRootViewController:homePageVC];
     
-    UIViewController *tmpVC1 = [[UIViewController alloc]init];
+    TNFeedPageVC *tmpVC1 = [[TNFeedPageVC alloc]init];
     tmpVC1.title = @"tmp1";
     TNBaseNavigationVC *tmpNVC1 = [[TNBaseNavigationVC alloc]initWithRootViewController:tmpVC1];
     

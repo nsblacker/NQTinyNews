@@ -23,6 +23,8 @@
 -(void)layoutUI{
     
     _mThumbnailImg = [[UIImageView alloc]init];
+//    _mThumbnailImg.layer.cornerRadius = 5;
+//    _mThumbnailImg.layer.masksToBounds = YES;
     [self.contentView addSubview:_mThumbnailImg];
     [_mThumbnailImg mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.contentView);
@@ -35,6 +37,10 @@
     _mTitleLab = [[UILabel alloc]init];
     _mTitleLab.font = [UIFont systemFontOfSize:20 weight:1.2];
     _mTitleLab.numberOfLines = 3;
+    
+    _mTitleLab.layer.shadowOffset = CGSizeMake(0, 2);
+    _mTitleLab.layer.shadowOpacity = 3;
+
     [self.contentView addSubview:_mTitleLab];
     [_mTitleLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(_mThumbnailImg.mas_right).offset(20);
