@@ -20,7 +20,6 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    self.automaticallyAdjustsScrollViewInsets = YES;
     [self.view addSubview:self.webView];
     [self.view addSubview:self.progressView];
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_urlStr]]];
@@ -47,7 +46,7 @@
 
 -(UIProgressView*)progressView{
     if(!_progressView){
-        _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0,CGRectGetMaxY(self.navigationController.navigationBar.frame), ScreenWidth, 0)];
+        _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0 , 0, ScreenWidth, 0)];
         self.progressView.tintColor = [UIColor redColor];
         self.progressView.trackTintColor = [UIColor whiteColor];
     }

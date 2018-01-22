@@ -43,7 +43,7 @@
         style.extraBtnBackgroundImageName = @"extraBtnBackgroundImage";
         style.segmentHeight = height_Segment;
         style.autoAdjustTitlesWidth = YES;
-        CGRect segmentViewFrame = CGRectMake(0, height_NavigationBar, ScreenWidth, height_ViewWithNav_Tab);
+        CGRect segmentViewFrame = CGRectMake(0, 0, ScreenWidth, height_ViewWithNav_Tab);
         _segmentV = [[ZJScrollPageView alloc]initWithFrame:segmentViewFrame segmentStyle:style titles:_titles parentViewController:self delegate:self];
     }
     return _segmentV;

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TNWebviewVC : TNBaseVC
+@interface TNWebviewVC : TNBaseAnimationVC
 @property(nonatomic ,strong)NSString *urlStr;
 @end

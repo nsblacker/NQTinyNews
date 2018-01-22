@@ -42,6 +42,7 @@
 		D26287811ECC5B3500AA5B37 /* NQTinyNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D26287801ECC5B3500AA5B37 /* NQTinyNewsUITests.m */; };
 		D2838CEC1F62879E00FC6F06 /* TNWebviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2838CEB1F62879E00FC6F06 /* TNWebviewVC.m */; };
 		D29EFE2A1EF7D066007D9FB5 /* TNBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EFE291EF7D066007D9FB5 /* TNBaseVC.m */; };
+		D2A4FB9B2013317C0068DAE8 /* TNBaseAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A4FB9A2013317C0068DAE8 /* TNBaseAnimationVC.m */; };
 		D2A6A7C11F9DEFD7002E7936 /* TNFeedPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A6A7C01F9DEFD7002E7936 /* TNFeedPageVC.m */; };
 		D2CDF07E1F42862C0041E785 /* TCGeneralService.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CDF07D1F42862C0041E785 /* TCGeneralService.m */; };
 		D2D529F71F61608A00E13B02 /* TNViewModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D529F61F61608A00E13B02 /* TNViewModelClass.m */; };
@@ -179,6 +180,8 @@
 		D2838CEB1F62879E00FC6F06 /* TNWebviewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNWebviewVC.m; sourceTree = "<group>"; };
 		D29EFE281EF7D066007D9FB5 /* TNBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNBaseVC.h; sourceTree = "<group>"; };
 		D29EFE291EF7D066007D9FB5 /* TNBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNBaseVC.m; sourceTree = "<group>"; };
+		D2A4FB992013317C0068DAE8 /* TNBaseAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNBaseAnimationVC.h; sourceTree = "<group>"; };
+		D2A4FB9A2013317C0068DAE8 /* TNBaseAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNBaseAnimationVC.m; sourceTree = "<group>"; };
 		D2A6A7BF1F9DEFD7002E7936 /* TNFeedPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNFeedPageVC.h; sourceTree = "<group>"; };
 		D2A6A7C01F9DEFD7002E7936 /* TNFeedPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNFeedPageVC.m; sourceTree = "<group>"; };
 		D2A6A7C31F9EE42C002E7936 /* image_face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_face.jpg; sourceTree = "<group>"; };
@@ -385,6 +388,8 @@
 				D23BA72D1EF7CA0000D44C1B /* TNBaseNavigationVC.m */,
 				D29EFE281EF7D066007D9FB5 /* TNBaseVC.h */,
 				D29EFE291EF7D066007D9FB5 /* TNBaseVC.m */,
+				D2A4FB992013317C0068DAE8 /* TNBaseAnimationVC.h */,
+				D2A4FB9A2013317C0068DAE8 /* TNBaseAnimationVC.m */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -895,6 +900,7 @@
 				D20394F21ED7FE2900B3BFB0 /* UIViewController+ZJScrollPageController.m in Sources */,
 				D2FE027E1ECE952E00CE83D7 /* TNNetworkManager.m in Sources */,
 				D2D529F71F61608A00E13B02 /* TNViewModelClass.m in Sources */,
+				D2A4FB9B2013317C0068DAE8 /* TNBaseAnimationVC.m in Sources */,
 				D20394DD1ED7F69100B3BFB0 /* HomePageVC.m in Sources */,
 				D26287661ECC5B3500AA5B37 /* NQTinyNews.xcdatamodeld in Sources */,
 				D20394F71ED7FE2900B3BFB0 /* ZJSegmentStyle.m in Sources */,

@@ -15,7 +15,7 @@
 #import "Marco.h"
 #import "Constant.h"
 #import "TNBaseClasses.h"
-
+#import "TNBaseAnimationVC.h"
 
 
 #endif /* NQTinyNews_PrefixHeader_pch */

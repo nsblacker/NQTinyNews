@@ -7,6 +7,7 @@
 //
 
 #import "TNBaseVC.h"
+#import <UIImage+YYAdd.h>
 
 @interface TNBaseVC ()
 
@@ -142,15 +143,13 @@
 #pragma mark - ThemeManager
 - (void)configureViews
 {
-//    [self.navigationController.navigationBar setBackgroundImage:[TCTools imageWithColor:Theme_Navbar_BGColor] forBarMetrics:0];
-//    [[UIApplication sharedApplication] setStatusBarStyle:Theme_StatusBar_Style];
-//    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:NotoRegular56, NSFontAttributeName,Theme_Label_TextColor(TMLabelNavTitle), NSForegroundColorAttributeName,nil]];
-//    [self.view setBackgroundColor:Theme_View_BGColor];
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    self.navigationController.edgesForExtendedLayout = UIRectEdgeNone;
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forBarMetrics:0];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:20 ], NSFontAttributeName,[UIColor blackColor], NSForegroundColorAttributeName,nil]];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     self.view.backgroundColor = [UIColor whiteColor];
-    //    self.navigationController.hidesBarsOnSwipe = YES;
-    //    self.tabBarController.hidesBottomBarWhenPushed = YES;
+    self.hidesBottomBarWhenPushed = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning {
